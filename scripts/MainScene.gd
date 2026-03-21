@@ -48,23 +48,18 @@ func _ready():
 	_load_background()
 
 func _setup_menu_layer():
-	# 菜单按钮位置 - 屏幕底部中央
 	var menu_parent = $CanvasLayer/UI/MenuButtonParent
 	menu_parent.position = Vector2((SCREEN_WIDTH - 96) / 2, SCREEN_HEIGHT - 110)
 	
-	# 移除PanelContainer背景
 	menu_items_panel.add_theme_stylebox_override("panel", StyleBoxEmpty.new())
+	menu_items_panel.clip_contents = true
 	
-	# 菜单项显示在按钮上方，从屏幕底部往上展开
-	# 14个按钮，每行4个 = 4行，每行高度约100
-	# 从y=600开始向上延伸
 	menu_items_panel.set_anchors_preset(Control.PRESET_BOTTOM_RIGHT)
 	menu_items_panel.anchor_left = 0
 	menu_items_panel.anchor_top = 1.0
 	menu_items_panel.anchor_right = 1
 	menu_items_panel.anchor_bottom = 1.0
-	# offset_top是负值，表示从anchor向上延伸
-	menu_items_panel.offset_top = -440  # 从按钮上方开始
+	menu_items_panel.offset_top = -440
 	menu_items_panel.offset_bottom = 0
 	menu_items_panel.offset_left = 10
 	menu_items_panel.offset_right = -10
@@ -148,9 +143,8 @@ func _create_pokedex_screen():
 	pokedex_screen = Control.new()
 	pokedex_screen.name = "PokedexScreen"
 	pokedex_screen.visible = false
-	# 不使用FULL_RECT，改为手动设置位置，留出底部菜单空间
 	pokedex_screen.set_anchors_preset(Control.PRESET_TOP_WIDE)
-	pokedex_screen.offset_bottom = -120  # 留出底部菜单按钮空间
+	pokedex_screen.offset_bottom = -120
 	$CanvasLayer/UI.add_child(pokedex_screen)
 	
 	var header = Control.new()
@@ -176,7 +170,15 @@ func _create_pokedex_screen():
 	filter_scroll.set_anchors_preset(Control.PRESET_TOP_WIDE)
 	filter_scroll.custom_minimum_size = Vector2(0, 80)
 	filter_scroll.offset_top = 50
-	filter_scroll.offset_bottom = -120  # 底部留出菜单空间
+	filter_scroll.offset_bottom = -120
+	# 禁用水平滚动
+	filter_scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	# 隐藏垂直滚动条并设置宽度为0
+	var filter_v_scroll = filter_scroll.get_v_scroll_bar()
+	if filter_v_scroll:
+		filter_v_scroll.custom_minimum_size = Vector2(0, 0)
+		filter_v_scroll.visible = false
+		filter_v_scroll.modulate.a = 0
 	pokedex_screen.add_child(filter_scroll)
 	
 	var filter_vbox = VBoxContainer.new()
@@ -214,14 +216,33 @@ func _create_pokedex_screen():
 	scroll.custom_minimum_size = Vector2(0, 550)
 	scroll.offset_top = 130
 	scroll.offset_bottom = -120
+	# 禁用水平滚动
+	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	# 隐藏垂直滚动条并设置宽度为0
+	var main_v_scroll = scroll.get_v_scroll_bar()
+	if main_v_scroll:
+		main_v_scroll.custom_minimum_size = Vector2(0, 0)
+		main_v_scroll.visible = false
+		main_v_scroll.modulate.a = 0
 	pokedex_screen.add_child(scroll)
+	
+	# 使用HBoxContainer实现内容居中
+	var hbox = HBoxContainer.new()
+	hbox.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	hbox.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	scroll.add_child(hbox)
+	
+	# 添加空白实现左侧边距
+	var left_spacer = Control.new()
+	left_spacer.custom_minimum_size = Vector2(10, 0)
+	hbox.add_child(left_spacer)
 	
 	pokedex_grid = GridContainer.new()
 	pokedex_grid.columns = 4
 	pokedex_grid.add_theme_constant_override("h_separation", 4)
 	pokedex_grid.add_theme_constant_override("v_separation", 4)
-	pokedex_grid.custom_minimum_size = Vector2(460, 0)
-	scroll.add_child(pokedex_grid)
+	pokedex_grid.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+	hbox.add_child(pokedex_grid)
 
 func _create_filter_dropdown(parent, label_text, options: Array) -> OptionButton:
 	var dropdown = OptionButton.new()

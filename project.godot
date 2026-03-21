@@ -16,6 +16,11 @@ window/size/viewport_height=800
 window/orientation=1
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+window/canvas_resize_policy=1
+
+[gui]
+
+theme/custom="res://resources/theme.tres"
 
 [rendering]
 
