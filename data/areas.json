@@ -1,0 +1,947 @@
+{
+  "verdantForest": {
+    "id": "verdantForest"
+  },
+  "foggyGraveyard": {
+    "id": "foggyGraveyard"
+  },
+  "woodlandConcert": {
+    "id": "woodlandConcert"
+  },
+  "mantleCore": {
+    "id": "mantleCore"
+  },
+  "fidoPark": {
+    "id": "fidoPark"
+  },
+  "citySewers": {
+    "id": "citySewers"
+  },
+  "activeVolcano": {
+    "id": "activeVolcano"
+  },
+  "powerPlant": {
+    "id": "powerPlant"
+  },
+  "quietMeadow": {
+    "id": "quietMeadow"
+  },
+  "urbanWalkway": {
+    "id": "urbanWalkway"
+  },
+  "sandyDunes": {
+    "id": "sandyDunes"
+  },
+  "sunkenShip": {
+    "id": "sunkenShip"
+  },
+  "offshoreRigger": {
+    "id": "offshoreRigger"
+  },
+  "safariZone": {
+    "id": "safariZone"
+  },
+  "coolBeach": {
+    "id": "coolBeach"
+  },
+  "computeringLab": {
+    "id": "computeringLab"
+  },
+  "gemstoneCavern": {
+    "id": "gemstoneCavern"
+  },
+  "frozenLake": {
+    "id": "frozenLake"
+  },
+  "abandonedManor": {
+    "id": "abandonedManor"
+  },
+  "dracoLair": {
+    "id": "dracoLair"
+  },
+  "mountainTrail": {
+    "id": "mountainTrail"
+  },
+  "teaParlor": {
+    "id": "teaParlor"
+  },
+  "pokemonDojo": {
+    "id": "pokemonDojo"
+  },
+  "skyHigh": {
+    "id": "skyHigh"
+  },
+  "dankCave": {
+    "id": "dankCave"
+  },
+  "forestShrine": {
+    "id": "forestShrine"
+  },
+  "streetCircus": {
+    "id": "streetCircus"
+  },
+  "weaponsFacility": {
+    "id": "weaponsFacility"
+  },
+  "scorchingBadlands": {
+    "id": "scorchingBadlands"
+  },
+  "lavaLake": {
+    "id": "lavaLake"
+  },
+  "crashingSeaside": {
+    "id": "crashingSeaside"
+  },
+  "strangeSpace": {
+    "id": "strangeSpace"
+  },
+  "chargestoneCave": {
+    "id": "chargestoneCave"
+  },
+  "seafoamCurrents": {
+    "id": "seafoamCurrents"
+  },
+  "valorLakeside": {
+    "id": "valorLakeside"
+  },
+  "thornwoodForest": {
+    "id": "thornwoodForest"
+  },
+  "unovaWorks": {
+    "id": "unovaWorks"
+  },
+  "snowpointCliff": {
+    "id": "snowpointCliff"
+  },
+  "hollowNest": {
+    "id": "hollowNest"
+  },
+  "poniCanyon": {
+    "id": "poniCanyon"
+  },
+  "seaBed": {
+    "id": "seaBed"
+  },
+  "lonLonRanch": {
+    "id": "lonLonRanch"
+  },
+  "saruTemple": {
+    "id": "saruTemple"
+  },
+  "evilSummit": {
+    "id": "evilSummit"
+  },
+  "fuegoIronworks": {
+    "id": "fuegoIronworks"
+  },
+  "permafrostGrotto": {
+    "id": "permafrostGrotto"
+  },
+  "berryForest": {
+    "id": "berryForest"
+  },
+  "relicPassage": {
+    "id": "relicPassage"
+  },
+  "sinnohUndergroundI": {
+    "id": "sinnohUndergroundI"
+  },
+  "beginnerDojoI": {
+    "id": "beginnerDojoI"
+  },
+  "advancedDojoI": {
+    "id": "advancedDojoI"
+  },
+  "expertDojoI": {
+    "id": "expertDojoI"
+  },
+  "victoryRoadI": {
+    "id": "victoryRoadI"
+  },
+  "glisteringCaveI": {
+    "id": "glisteringCaveI"
+  },
+  "sunkenTempleI": {
+    "id": "sunkenTempleI"
+  },
+  "sinnohUndergroundII": {
+    "id": "sinnohUndergroundII"
+  },
+  "beginnerDojoII": {
+    "id": "beginnerDojoII"
+  },
+  "advancedDojoII": {
+    "id": "advancedDojoII"
+  },
+  "expertDojoII": {
+    "id": "expertDojoII"
+  },
+  "victoryRoadII": {
+    "id": "victoryRoadII"
+  },
+  "glisteringCaveII": {
+    "id": "glisteringCaveII"
+  },
+  "sunkenTempleII": {
+    "id": "sunkenTempleII"
+  },
+  "sinnohUndergroundIII": {
+    "id": "sinnohUndergroundIII"
+  },
+  "beginnerDojoIII": {
+    "id": "beginnerDojoIII"
+  },
+  "advancedDojoIII": {
+    "id": "advancedDojoIII"
+  },
+  "expertDojoIII": {
+    "id": "expertDojoIII"
+  },
+  "victoryRoadIII": {
+    "id": "victoryRoadIII"
+  },
+  "glisteringCaveIII": {
+    "id": "glisteringCaveIII"
+  },
+  "sunkenTempleIII": {
+    "id": "sunkenTempleIII"
+  },
+  "cosplayConvention": {
+    "id": "cosplayConvention"
+  },
+  "suspiciousManor": {
+    "id": "suspiciousManor"
+  },
+  "summitOfSeasons": {
+    "id": "summitOfSeasons"
+  },
+  "ceruleanCave": {
+    "id": "ceruleanCave"
+  },
+  "eventMegaBlastoise": {
+    "id": "eventMegaBlastoise"
+  },
+  "eventMegaCharizardY": {
+    "id": "eventMegaCharizardY"
+  },
+  "eventMegaVenusaur": {
+    "id": "eventMegaVenusaur"
+  },
+  "articSummit": {
+    "id": "articSummit"
+  },
+  "fierySummit": {
+    "id": "fierySummit"
+  },
+  "eventZapdos": {
+    "id": "eventZapdos"
+  },
+  "eventArticuno": {
+    "id": "eventArticuno"
+  },
+  "eventMoltres": {
+    "id": "eventMoltres"
+  },
+  "eventMegaCamerupt": {
+    "id": "eventMegaCamerupt"
+  },
+  "eventMegaManectric": {
+    "id": "eventMegaManectric"
+  },
+  "eventMegaAbomasnow": {
+    "id": "eventMegaAbomasnow"
+  },
+  "eventMegaRaichuX": {
+    "id": "eventMegaRaichuX"
+  },
+  "eventMegaRaichuY": {
+    "id": "eventMegaRaichuY"
+  },
+  "eventMegaCharizardX": {
+    "id": "eventMegaCharizardX"
+  },
+  "lamodeDogwalk": {
+    "id": "lamodeDogwalk"
+  },
+  "primitiveGrove": {
+    "id": "primitiveGrove"
+  },
+  "eventGreatTusk": {
+    "id": "eventGreatTusk"
+  },
+  "eventScreamTail": {
+    "id": "eventScreamTail"
+  },
+  "eventSlitherWing": {
+    "id": "eventSlitherWing"
+  },
+  "eventBruteBonnet": {
+    "id": "eventBruteBonnet"
+  },
+  "eventFlutterMane": {
+    "id": "eventFlutterMane"
+  },
+  "eventSandyShocks": {
+    "id": "eventSandyShocks"
+  },
+  "eventRoaringMoon": {
+    "id": "eventRoaringMoon"
+  },
+  "eventMegaAerodactly": {
+    "id": "eventMegaAerodactly"
+  },
+  "eventMegaGyarados": {
+    "id": "eventMegaGyarados"
+  },
+  "zoologyLab": {
+    "id": "zoologyLab"
+  },
+  "primalFissure": {
+    "id": "primalFissure"
+  },
+  "eventMegaGarchomp": {
+    "id": "eventMegaGarchomp"
+  },
+  "eventMegaTyranitar": {
+    "id": "eventMegaTyranitar"
+  },
+  "eventTapuBulu": {
+    "id": "eventTapuBulu"
+  },
+  "eventMegaPinsir": {
+    "id": "eventMegaPinsir"
+  },
+  "eventGalarianZapdos": {
+    "id": "eventGalarianZapdos"
+  },
+  "eventTingLu": {
+    "id": "eventTingLu"
+  },
+  "exoticPond": {
+    "id": "exoticPond"
+  },
+  "meteorCave": {
+    "id": "meteorCave"
+  },
+  "ancientTomb": {
+    "id": "ancientTomb"
+  },
+  "steelTomb": {
+    "id": "steelTomb"
+  },
+  "eventMegaSceptile": {
+    "id": "eventMegaSceptile"
+  },
+  "eventMegaSwampert": {
+    "id": "eventMegaSwampert"
+  },
+  "eventMegaBlaziken": {
+    "id": "eventMegaBlaziken"
+  },
+  "frozenTomb": {
+    "id": "frozenTomb"
+  },
+  "eventRegirock": {
+    "id": "eventRegirock"
+  },
+  "eventRegisteel": {
+    "id": "eventRegisteel"
+  },
+  "eventRegice": {
+    "id": "eventRegice"
+  },
+  "eventMegaMawile": {
+    "id": "eventMegaMawile"
+  },
+  "eventMegaGlalie": {
+    "id": "eventMegaGlalie"
+  },
+  "eventMegaSteelix": {
+    "id": "eventMegaSteelix"
+  },
+  "eventRegieleki": {
+    "id": "eventRegieleki"
+  },
+  "eventRegidrago": {
+    "id": "eventRegidrago"
+  },
+  "eventGougingFire": {
+    "id": "eventGougingFire"
+  },
+  "paupauFestival": {
+    "id": "paupauFestival"
+  },
+  "flowerMeadow": {
+    "id": "flowerMeadow"
+  },
+  "aetherHeadquarters": {
+    "id": "aetherHeadquarters"
+  },
+  "eventNaganadel": {
+    "id": "eventNaganadel"
+  },
+  "eventSilvally": {
+    "id": "eventSilvally"
+  },
+  "eventCosmoem": {
+    "id": "eventCosmoem"
+  },
+  "eventGuzzlord": {
+    "id": "eventGuzzlord"
+  },
+  "eventXurkitree": {
+    "id": "eventXurkitree"
+  },
+  "eventNihilego": {
+    "id": "eventNihilego"
+  },
+  "eventKartana": {
+    "id": "eventKartana"
+  },
+  "eventBuzzwole": {
+    "id": "eventBuzzwole"
+  },
+  "eventPheromosa": {
+    "id": "eventPheromosa"
+  },
+  "eventBlacephalon": {
+    "id": "eventBlacephalon"
+  },
+  "wormholeSpace": {
+    "id": "wormholeSpace"
+  },
+  "eventMegaMetagross": {
+    "id": "eventMegaMetagross"
+  },
+  "eventTapuFini": {
+    "id": "eventTapuFini"
+  },
+  "eventTapuLele": {
+    "id": "eventTapuLele"
+  },
+  "eventChienPao": {
+    "id": "eventChienPao"
+  },
+  "eventMegaDragonite": {
+    "id": "eventMegaDragonite"
+  },
+  "eventGalarianMoltres": {
+    "id": "eventGalarianMoltres"
+  },
+  "ecosphere": {
+    "id": "ecosphere"
+  },
+  "protonCity": {
+    "id": "protonCity"
+  },
+  "climatologyLab": {
+    "id": "climatologyLab"
+  },
+  "fusionPlant": {
+    "id": "fusionPlant"
+  },
+  "eventMegaGengar": {
+    "id": "eventMegaGengar"
+  },
+  "eventThundurusTherian": {
+    "id": "eventThundurusTherian"
+  },
+  "eventTapuKoko": {
+    "id": "eventTapuKoko"
+  },
+  "eventIronThorns": {
+    "id": "eventIronThorns"
+  },
+  "eventIronHands": {
+    "id": "eventIronHands"
+  },
+  "eventIronJugulis": {
+    "id": "eventIronJugulis"
+  },
+  "eventIronTreads": {
+    "id": "eventIronTreads"
+  },
+  "eventIronBundle": {
+    "id": "eventIronBundle"
+  },
+  "eventIronMoth": {
+    "id": "eventIronMoth"
+  },
+  "eventIronValiant": {
+    "id": "eventIronValiant"
+  },
+  "eventMegaScizor": {
+    "id": "eventMegaScizor"
+  },
+  "eventMegaAggron": {
+    "id": "eventMegaAggron"
+  },
+  "eventMegaBaxcalibur": {
+    "id": "eventMegaBaxcalibur"
+  },
+  "eventChiYu": {
+    "id": "eventChiYu"
+  },
+  "eventGalarianArticuno": {
+    "id": "eventGalarianArticuno"
+  },
+  "alphaRuins": {
+    "id": "alphaRuins"
+  },
+  "lakeValor": {
+    "id": "lakeValor"
+  },
+  "galacticWarehouse": {
+    "id": "galacticWarehouse"
+  },
+  "galacticHeadquarters": {
+    "id": "galacticHeadquarters"
+  },
+  "eventMegaGallade": {
+    "id": "eventMegaGallade"
+  },
+  "eventCresselia": {
+    "id": "eventCresselia"
+  },
+  "eventHeatran": {
+    "id": "eventHeatran"
+  },
+  "eventMegaLucario": {
+    "id": "eventMegaLucario"
+  },
+  "eventMegaHeracross": {
+    "id": "eventMegaHeracross"
+  },
+  "eventWoChien": {
+    "id": "eventWoChien"
+  },
+  "lakeAcuity": {
+    "id": "lakeAcuity"
+  },
+  "eventMesprit": {
+    "id": "eventMesprit"
+  },
+  "eventAzelf": {
+    "id": "eventAzelf"
+  },
+  "eventUxie": {
+    "id": "eventUxie"
+  },
+  "eventMegaPidgeot": {
+    "id": "eventMegaPidgeot"
+  },
+  "eventMegaBeedrill": {
+    "id": "eventMegaBeedrill"
+  },
+  "eventMegaAlakazam": {
+    "id": "eventMegaAlakazam"
+  },
+  "vsYounsterBilly": {
+    "id": "vsYounsterBilly"
+  },
+  "vsAromaLadyCatherine": {
+    "id": "vsAromaLadyCatherine"
+  },
+  "vsBugCatcherMilo": {
+    "id": "vsBugCatcherMilo"
+  },
+  "vsGymLeaderBrock": {
+    "id": "vsGymLeaderBrock"
+  },
+  "vsBlackBeltRyan": {
+    "id": "vsBlackBeltRyan"
+  },
+  "vsSchoolKidAaron": {
+    "id": "vsSchoolKidAaron"
+  },
+  "vsRocketGrunt1": {
+    "id": "vsRocketGrunt1"
+  },
+  "vsGymLeaderMisty": {
+    "id": "vsGymLeaderMisty"
+  },
+  "vsSwimmerDan": {
+    "id": "vsSwimmerDan"
+  },
+  "vsVeteranToshiro": {
+    "id": "vsVeteranToshiro"
+  },
+  "vsClownDuck": {
+    "id": "vsClownDuck"
+  },
+  "vsGymLeaderPhoebe": {
+    "id": "vsGymLeaderPhoebe"
+  },
+  "vsTwinTrainersBellisse": {
+    "id": "vsTwinTrainersBellisse"
+  },
+  "vsAceTrainerRicardo": {
+    "id": "vsAceTrainerRicardo"
+  },
+  "vsAceTrainerLily": {
+    "id": "vsAceTrainerLily"
+  },
+  "vsEliteTrainerCynthia": {
+    "id": "vsEliteTrainerCynthia"
+  },
+  "vsEliteFourLorelei": {
+    "id": "vsEliteFourLorelei"
+  },
+  "vsEliteFourFlint": {
+    "id": "vsEliteFourFlint"
+  },
+  "vsEliteFourPoppy": {
+    "id": "vsEliteFourPoppy"
+  },
+  "vsEliteFourLance": {
+    "id": "vsEliteFourLance"
+  },
+  "vsTeamLeaderColress": {
+    "id": "vsTeamLeaderColress"
+  },
+  "vsTeamLeaderArchie": {
+    "id": "vsTeamLeaderArchie"
+  },
+  "vsTeamLeaderMaxie": {
+    "id": "vsTeamLeaderMaxie"
+  },
+  "vsTeamLeaderGiovanni": {
+    "id": "vsTeamLeaderGiovanni"
+  },
+  "vsTeamLeaderCyrus": {
+    "id": "vsTeamLeaderCyrus"
+  },
+  "vsTeamLeaderGhetsis": {
+    "id": "vsTeamLeaderGhetsis"
+  },
+  "vsMasterTrainerSteven": {
+    "id": "vsMasterTrainerSteven"
+  },
+  "vsMasterTrainerGeeta": {
+    "id": "vsMasterTrainerGeeta"
+  },
+  "vsMasterTrainerNemona": {
+    "id": "vsMasterTrainerNemona"
+  },
+  "vsMasterTrainerAlder": {
+    "id": "vsMasterTrainerAlder"
+  },
+  "vsMasterTrainerWallace": {
+    "id": "vsMasterTrainerWallace"
+  },
+  "vsUltraEntityLusamine": {
+    "id": "vsUltraEntityLusamine"
+  },
+  "vsLegendTrainerLillie": {
+    "id": "vsLegendTrainerLillie"
+  },
+  "vsLegendTrainerDawn": {
+    "id": "vsLegendTrainerDawn"
+  },
+  "vsLegendTrainerSilver": {
+    "id": "vsLegendTrainerSilver"
+  },
+  "vsLegendTrainerBrendan": {
+    "id": "vsLegendTrainerBrendan"
+  },
+  "vsLegendTrainerAZ": {
+    "id": "vsLegendTrainerAZ"
+  },
+  "vsLegendTrainerAsh": {
+    "id": "vsLegendTrainerAsh"
+  },
+  "vsLegendTrainerBlue": {
+    "id": "vsLegendTrainerBlue"
+  },
+  "vsPokemonProfessorOak": {
+    "id": "vsPokemonProfessorOak"
+  },
+  "frontierMorty": {
+    "id": "frontierMorty"
+  },
+  "frontierHamburg": {
+    "id": "frontierHamburg"
+  },
+  "frontierLaila": {
+    "id": "frontierLaila"
+  },
+  "frontierBianque": {
+    "id": "frontierBianque"
+  },
+  "frontierMiguel": {
+    "id": "frontierMiguel"
+  },
+  "frontierMistica": {
+    "id": "frontierMistica"
+  },
+  "frontierPierro": {
+    "id": "frontierPierro"
+  },
+  "frontierMauro": {
+    "id": "frontierMauro"
+  },
+  "frontierKiro": {
+    "id": "frontierKiro"
+  },
+  "frontierKatarina": {
+    "id": "frontierKatarina"
+  },
+  "frontierFausto": {
+    "id": "frontierFausto"
+  },
+  "frontierMomo": {
+    "id": "frontierMomo"
+  },
+  "frontierJairo": {
+    "id": "frontierJairo"
+  },
+  "frontierJunimo": {
+    "id": "frontierJunimo"
+  },
+  "frontierLion": {
+    "id": "frontierLion"
+  },
+  "frontierGordon": {
+    "id": "frontierGordon"
+  },
+  "frontierTaria": {
+    "id": "frontierTaria"
+  },
+  "frontierIota": {
+    "id": "frontierIota"
+  },
+  "frontierRoark": {
+    "id": "frontierRoark"
+  },
+  "frontierNessa": {
+    "id": "frontierNessa"
+  },
+  "frontierLtSurge": {
+    "id": "frontierLtSurge"
+  },
+  "frontierErika": {
+    "id": "frontierErika"
+  },
+  "frontierRoxie": {
+    "id": "frontierRoxie"
+  },
+  "frontierSabrina": {
+    "id": "frontierSabrina"
+  },
+  "frontierBlaine": {
+    "id": "frontierBlaine"
+  },
+  "frontierNorman": {
+    "id": "frontierNorman"
+  },
+  "frontierMarnie": {
+    "id": "frontierMarnie"
+  },
+  "frontierSkyla": {
+    "id": "frontierSkyla"
+  },
+  "frontierIris": {
+    "id": "frontierIris"
+  },
+  "frontierOpal": {
+    "id": "frontierOpal"
+  },
+  "frontierBurgh": {
+    "id": "frontierBurgh"
+  },
+  "frontierCandice": {
+    "id": "frontierCandice"
+  },
+  "frontierJasmine": {
+    "id": "frontierJasmine"
+  },
+  "frontierClay": {
+    "id": "frontierClay"
+  },
+  "frontierKorrina": {
+    "id": "frontierKorrina"
+  },
+  "frontierOlivia": {
+    "id": "frontierOlivia"
+  },
+  "frontierSiebold": {
+    "id": "frontierSiebold"
+  },
+  "frontierDiamant": {
+    "id": "frontierDiamant"
+  },
+  "frontierMatron": {
+    "id": "frontierMatron"
+  },
+  "frontierKoga": {
+    "id": "frontierKoga"
+  },
+  "frontierLucian": {
+    "id": "frontierLucian"
+  },
+  "frontierCrispin": {
+    "id": "frontierCrispin"
+  },
+  "frontierLarry": {
+    "id": "frontierLarry"
+  },
+  "frontierSidney": {
+    "id": "frontierSidney"
+  },
+  "frontierKahili": {
+    "id": "frontierKahili"
+  },
+  "frontierDrake": {
+    "id": "frontierDrake"
+  },
+  "frontierLacey": {
+    "id": "frontierLacey"
+  },
+  "frontierAaron": {
+    "id": "frontierAaron"
+  },
+  "frontierGlacia": {
+    "id": "frontierGlacia"
+  },
+  "frontierWikstrom": {
+    "id": "frontierWikstrom"
+  },
+  "frontierBertha": {
+    "id": "frontierBertha"
+  },
+  "frontierBruno": {
+    "id": "frontierBruno"
+  },
+  "frontierAcerola": {
+    "id": "frontierAcerola"
+  },
+  "frontierPeony": {
+    "id": "frontierPeony"
+  },
+  "frontierArchie": {
+    "id": "frontierArchie"
+  },
+  "frontierColress": {
+    "id": "frontierColress"
+  },
+  "frontierNemona": {
+    "id": "frontierNemona"
+  },
+  "frontierGuzma": {
+    "id": "frontierGuzma"
+  },
+  "frontierKieran": {
+    "id": "frontierKieran"
+  },
+  "frontierMaxie": {
+    "id": "frontierMaxie"
+  },
+  "frontierPenny": {
+    "id": "frontierPenny"
+  },
+  "frontierGiovanni": {
+    "id": "frontierGiovanni"
+  },
+  "frontierWallace": {
+    "id": "frontierWallace"
+  },
+  "frontierCyrus": {
+    "id": "frontierCyrus"
+  },
+  "frontierDiantha": {
+    "id": "frontierDiantha"
+  },
+  "frontierTrace": {
+    "id": "frontierTrace"
+  },
+  "frontierGhetsis": {
+    "id": "frontierGhetsis"
+  },
+  "frontierSteven": {
+    "id": "frontierSteven"
+  },
+  "frontierLeon": {
+    "id": "frontierLeon"
+  },
+  "frontierAlder": {
+    "id": "frontierAlder"
+  },
+  "frontierGeeta": {
+    "id": "frontierGeeta"
+  },
+  "frontierSpiralingTower": {
+    "id": "frontierSpiralingTower"
+  },
+  "frontierBattleFactory": {
+    "id": "frontierBattleFactory"
+  },
+  "dimensionRift1": {
+    "id": "dimensionRift1"
+  },
+  "dimensionRaid1": {
+    "id": "dimensionRaid1"
+  },
+  "dimensionRift2": {
+    "id": "dimensionRift2"
+  },
+  "dimensionRaid2": {
+    "id": "dimensionRaid2"
+  },
+  "dimensionRift3": {
+    "id": "dimensionRift3"
+  },
+  "dimensionRaid3": {
+    "id": "dimensionRaid3"
+  },
+  "dimensionRift4": {
+    "id": "dimensionRift4"
+  },
+  "dimensionRaid4": {
+    "id": "dimensionRaid4"
+  },
+  "dimensionPalkia": {
+    "id": "dimensionPalkia"
+  },
+  "dimensionPikachuGmax": {
+    "id": "dimensionPikachuGmax"
+  },
+  "dimensionKyuremWhite": {
+    "id": "dimensionKyuremWhite"
+  },
+  "dimensionMegaRayquaza": {
+    "id": "dimensionMegaRayquaza"
+  },
+  "missingArea": {
+    "id": "missingArea"
+  },
+  "studioA": {
+    "id": "studioA"
+  },
+  "secretGhost": {
+    "id": "secretGhost"
+  },
+  "secretOnix": {
+    "id": "secretOnix"
+  },
+  "secretHumanoid": {
+    "id": "secretHumanoid"
+  },
+  "secretAerodactly": {
+    "id": "secretAerodactly"
+  },
+  "secretKabutops": {
+    "id": "secretKabutops"
+  },
+  "wildlifePark": {
+    "id": "wildlifePark"
+  },
+  "training": {
+    "id": "training"
+  },
+  "trickyForest": {
+    "id": "trickyForest"
+  },
+  "seasonMarshadow": {
+    "id": "seasonMarshadow"
+  }
+}

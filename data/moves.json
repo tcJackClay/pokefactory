@@ -1,0 +1,2263 @@
+{
+  "quickAttack": {
+    "id": "quickAttack",
+    "type": "normal",
+    "power": 40,
+    "rarity": 1
+  },
+  "tackle": {
+    "id": "tackle",
+    "type": "normal",
+    "power": 40,
+    "rarity": 1
+  },
+  "doubleSlap": {
+    "id": "doubleSlap",
+    "type": "normal",
+    "power": 20,
+    "rarity": 1
+  },
+  "cut": {
+    "id": "cut",
+    "type": "normal",
+    "power": 50,
+    "rarity": 1
+  },
+  "leer": {
+    "id": "leer",
+    "type": "normal",
+    "power": 0,
+    "rarity": 1,
+    "restricted": true
+  },
+  "growl": {
+    "id": "growl",
+    "type": "normal",
+    "power": 0,
+    "rarity": 1
+  },
+  "swagger": {
+    "id": "swagger",
+    "type": "normal",
+    "power": 0,
+    "rarity": 2
+  },
+  "doubleHit": {
+    "id": "doubleHit",
+    "type": "normal",
+    "power": 35,
+    "rarity": 2
+  },
+  "playNice": {
+    "id": "playNice",
+    "type": "normal",
+    "power": 0,
+    "rarity": 2
+  },
+  "swift": {
+    "id": "swift",
+    "type": "normal",
+    "power": 60,
+    "rarity": 2
+  },
+  "dizzyPunch": {
+    "id": "dizzyPunch",
+    "type": "normal",
+    "power": 70,
+    "rarity": 2
+  },
+  "stomp": {
+    "id": "stomp",
+    "type": "normal",
+    "power": 65,
+    "rarity": 2
+  },
+  "screech": {
+    "id": "screech",
+    "type": "normal",
+    "power": 0,
+    "rarity": 3,
+    "restricted": true
+  },
+  "smellingSalts": {
+    "id": "smellingSalts",
+    "type": "normal",
+    "power": 70,
+    "rarity": 3
+  },
+  "facade": {
+    "id": "facade",
+    "type": "normal",
+    "power": 70,
+    "rarity": 3
+  },
+  "slash": {
+    "id": "slash",
+    "type": "normal",
+    "power": 90,
+    "rarity": 3
+  },
+  "extremeSpeed": {
+    "id": "extremeSpeed",
+    "type": "normal",
+    "power": 75,
+    "rarity": 3
+  },
+  "strength": {
+    "id": "strength",
+    "type": "normal",
+    "power": 100,
+    "rarity": 3
+  },
+  "hyperVoice": {
+    "id": "hyperVoice",
+    "type": "normal",
+    "power": 90,
+    "rarity": 3
+  },
+  "bodyPress": {
+    "id": "bodyPress",
+    "type": "normal",
+    "power": 90,
+    "rarity": 3
+  },
+  "hyperBeam": {
+    "id": "hyperBeam",
+    "type": "normal",
+    "power": 150,
+    "rarity": 3
+  },
+  "gigaImpact": {
+    "id": "gigaImpact",
+    "type": "normal",
+    "power": 150,
+    "rarity": 3
+  },
+  "swordsDance": {
+    "id": "swordsDance",
+    "type": "normal",
+    "power": 0,
+    "rarity": 3,
+    "restricted": true
+  },
+  "ember": {
+    "id": "ember",
+    "type": "fire",
+    "power": 40,
+    "rarity": 1
+  },
+  "fireSpin": {
+    "id": "fireSpin",
+    "type": "fire",
+    "power": 20,
+    "rarity": 1
+  },
+  "flameCharge": {
+    "id": "flameCharge",
+    "type": "fire",
+    "power": 50,
+    "rarity": 2
+  },
+  "incinerate": {
+    "id": "incinerate",
+    "type": "fire",
+    "power": 60,
+    "rarity": 2
+  },
+  "fireFang": {
+    "id": "fireFang",
+    "type": "fire",
+    "power": 65,
+    "rarity": 2
+  },
+  "firePunch": {
+    "id": "firePunch",
+    "type": "fire",
+    "power": 75,
+    "rarity": 2
+  },
+  "sunnyDay": {
+    "id": "sunnyDay",
+    "type": "fire",
+    "power": 0,
+    "rarity": 3
+  },
+  "flamethrower": {
+    "id": "flamethrower",
+    "type": "fire",
+    "power": 90,
+    "rarity": 3
+  },
+  "heatWave": {
+    "id": "heatWave",
+    "type": "fire",
+    "power": 60,
+    "rarity": 3
+  },
+  "fireBlast": {
+    "id": "fireBlast",
+    "type": "fire",
+    "power": 120,
+    "rarity": 3
+  },
+  "flareBlitz": {
+    "id": "flareBlitz",
+    "type": "fire",
+    "power": 120,
+    "rarity": 3
+  },
+  "overheat": {
+    "id": "overheat",
+    "type": "fire",
+    "rarity": 3
+  },
+  "nuzzle": {
+    "id": "nuzzle",
+    "type": "electric",
+    "power": 40,
+    "rarity": 1
+  },
+  "magneticFlux": {
+    "id": "magneticFlux",
+    "type": "electric",
+    "power": 0,
+    "rarity": 1
+  },
+  "thunderShock": {
+    "id": "thunderShock",
+    "type": "electric",
+    "power": 40,
+    "rarity": 1
+  },
+  "thunderWave": {
+    "id": "thunderWave",
+    "type": "electric",
+    "power": 0,
+    "rarity": 2
+  },
+  "chargeBeam": {
+    "id": "chargeBeam",
+    "type": "electric",
+    "power": 60,
+    "rarity": 2
+  },
+  "electroWeb": {
+    "id": "electroWeb",
+    "type": "electric",
+    "power": 55,
+    "rarity": 2
+  },
+  "thunderFang": {
+    "id": "thunderFang",
+    "type": "electric",
+    "power": 65,
+    "rarity": 2
+  },
+  "thunderPunch": {
+    "id": "thunderPunch",
+    "type": "electric",
+    "power": 75,
+    "rarity": 2
+  },
+  "thunderbolt": {
+    "id": "thunderbolt",
+    "type": "electric",
+    "power": 90,
+    "rarity": 3
+  },
+  "discharge": {
+    "id": "discharge",
+    "type": "electric",
+    "power": 70,
+    "rarity": 3
+  },
+  "electricTerrain": {
+    "id": "electricTerrain",
+    "type": "electric",
+    "power": 0,
+    "rarity": 3
+  },
+  "thunder": {
+    "id": "thunder",
+    "type": "electric",
+    "power": 110,
+    "rarity": 3
+  },
+  "voltSwitch": {
+    "id": "voltSwitch",
+    "type": "electric",
+    "power": 70,
+    "rarity": 3
+  },
+  "wildCharge": {
+    "id": "wildCharge",
+    "type": "electric",
+    "power": 120,
+    "rarity": 3
+  },
+  "supercellSlam": {
+    "id": "supercellSlam",
+    "type": "electric",
+    "rarity": 3
+  },
+  "mudSlap": {
+    "id": "mudSlap",
+    "type": "ground",
+    "power": 20,
+    "rarity": 1
+  },
+  "magnitude": {
+    "id": "magnitude",
+    "type": "ground",
+    "power": 10,
+    "rarity": 1
+  },
+  "mudShot": {
+    "id": "mudShot",
+    "type": "ground",
+    "power": 55,
+    "rarity": 2
+  },
+  "bulldoze": {
+    "id": "bulldoze",
+    "type": "ground",
+    "power": 60,
+    "rarity": 2
+  },
+  "sandstorm": {
+    "id": "sandstorm",
+    "type": "ground",
+    "power": 0,
+    "rarity": 2
+  },
+  "scorchingSands": {
+    "id": "scorchingSands",
+    "type": "ground",
+    "power": 70,
+    "rarity": 2
+  },
+  "rototiller": {
+    "id": "rototiller",
+    "type": "ground",
+    "power": 0,
+    "rarity": 3,
+    "restricted": true
+  },
+  "earthquake": {
+    "id": "earthquake",
+    "type": "ground",
+    "power": 100,
+    "rarity": 3
+  },
+  "dig": {
+    "id": "dig",
+    "type": "ground",
+    "power": 80,
+    "rarity": 3
+  },
+  "earthPower": {
+    "id": "earthPower",
+    "type": "ground",
+    "power": 90,
+    "rarity": 3
+  },
+  "stompingTantrum": {
+    "id": "stompingTantrum",
+    "type": "ground",
+    "rarity": 3
+  },
+  "bulletPunch": {
+    "id": "bulletPunch",
+    "type": "steel",
+    "power": 40,
+    "rarity": 1
+  },
+  "metalClaw": {
+    "id": "metalClaw",
+    "type": "steel",
+    "power": 50,
+    "rarity": 1
+  },
+  "magnetBomb": {
+    "id": "magnetBomb",
+    "type": "steel",
+    "power": 60,
+    "rarity": 2
+  },
+  "mirrorShot": {
+    "id": "mirrorShot",
+    "type": "steel",
+    "power": 70,
+    "rarity": 2
+  },
+  "steelWing": {
+    "id": "steelWing",
+    "type": "steel",
+    "power": 70,
+    "rarity": 2
+  },
+  "ironHead": {
+    "id": "ironHead",
+    "type": "steel",
+    "power": 80,
+    "rarity": 2
+  },
+  "sharkJaws": {
+    "id": "sharkJaws",
+    "type": "steel",
+    "power": 70,
+    "rarity": 2
+  },
+  "ironSlug": {
+    "id": "ironSlug",
+    "type": "steel",
+    "power": 20,
+    "rarity": 2
+  },
+  "flashCannon": {
+    "id": "flashCannon",
+    "type": "steel",
+    "power": 80,
+    "rarity": 3
+  },
+  "ironTail": {
+    "id": "ironTail",
+    "type": "steel",
+    "power": 90,
+    "rarity": 3
+  },
+  "smartStrike": {
+    "id": "smartStrike",
+    "type": "steel",
+    "power": 90,
+    "rarity": 3
+  },
+  "metalSound": {
+    "id": "metalSound",
+    "type": "steel",
+    "power": 0,
+    "rarity": 3,
+    "restricted": true
+  },
+  "ironDefense": {
+    "id": "ironDefense",
+    "type": "steel",
+    "power": 0,
+    "rarity": 3
+  },
+  "peck": {
+    "id": "peck",
+    "type": "flying",
+    "power": 35,
+    "rarity": 1
+  },
+  "gust": {
+    "id": "gust",
+    "type": "flying",
+    "power": 40,
+    "rarity": 1
+  },
+  "skyDrop": {
+    "id": "skyDrop",
+    "type": "flying",
+    "power": 50,
+    "rarity": 2
+  },
+  "dualWingbeat": {
+    "id": "dualWingbeat",
+    "type": "flying",
+    "power": 30,
+    "rarity": 2
+  },
+  "acrobatics": {
+    "id": "acrobatics",
+    "type": "flying",
+    "power": 65,
+    "rarity": 2
+  },
+  "airShlash": {
+    "id": "airShlash",
+    "type": "flying",
+    "power": 75,
+    "rarity": 3
+  },
+  "drillPeck": {
+    "id": "drillPeck",
+    "type": "flying",
+    "power": 80,
+    "rarity": 2
+  },
+  "tailwind": {
+    "id": "tailwind",
+    "type": "flying",
+    "power": 0,
+    "rarity": 2
+  },
+  "fly": {
+    "id": "fly",
+    "type": "flying",
+    "power": 90,
+    "rarity": 3
+  },
+  "featherDance": {
+    "id": "featherDance",
+    "type": "flying",
+    "power": 0,
+    "rarity": 3
+  },
+  "bounce": {
+    "id": "bounce",
+    "type": "flying",
+    "power": 75,
+    "rarity": 3
+  },
+  "hurricane": {
+    "id": "hurricane",
+    "type": "flying",
+    "power": 100,
+    "rarity": 3
+  },
+  "razorTalons": {
+    "id": "razorTalons",
+    "type": "flying",
+    "power": 40,
+    "rarity": 3
+  },
+  "acid": {
+    "id": "acid",
+    "type": "poison",
+    "power": 40,
+    "rarity": 1
+  },
+  "poisonSting": {
+    "id": "poisonSting",
+    "type": "poison",
+    "power": 15,
+    "rarity": 1
+  },
+  "smog": {
+    "id": "smog",
+    "type": "poison",
+    "power": 30,
+    "rarity": 1
+  },
+  "poisonPowder": {
+    "id": "poisonPowder",
+    "type": "poison",
+    "power": 0,
+    "rarity": 2
+  },
+  "toxic": {
+    "id": "toxic",
+    "type": "poison",
+    "power": 0,
+    "rarity": 2
+  },
+  "poisonFang": {
+    "id": "poisonFang",
+    "type": "poison",
+    "power": 60,
+    "rarity": 2
+  },
+  "sludge": {
+    "id": "sludge",
+    "type": "poison",
+    "power": 65,
+    "rarity": 2
+  },
+  "crossPoison": {
+    "id": "crossPoison",
+    "type": "poison",
+    "power": 70,
+    "rarity": 2
+  },
+  "poisonClaw": {
+    "id": "poisonClaw",
+    "type": "poison",
+    "power": 75,
+    "rarity": 2
+  },
+  "poisonJab": {
+    "id": "poisonJab",
+    "type": "poison",
+    "power": 80,
+    "rarity": 3
+  },
+  "sludgeBomb": {
+    "id": "sludgeBomb",
+    "type": "poison",
+    "power": 80,
+    "rarity": 3
+  },
+  "sludgeWave": {
+    "id": "sludgeWave",
+    "type": "poison",
+    "power": 95,
+    "rarity": 3
+  },
+  "coil": {
+    "id": "coil",
+    "type": "poison",
+    "power": 0,
+    "rarity": 3,
+    "restricted": true
+  },
+  "acidArmor": {
+    "id": "acidArmor",
+    "type": "poison",
+    "power": 0,
+    "rarity": 3
+  },
+  "acidSpray": {
+    "id": "acidSpray",
+    "type": "poison",
+    "power": 50,
+    "rarity": 3
+  },
+  "noxiousTorque": {
+    "id": "noxiousTorque",
+    "type": "poison",
+    "rarity": 3
+  },
+  "iceShard": {
+    "id": "iceShard",
+    "type": "ice",
+    "power": 40,
+    "rarity": 1
+  },
+  "powderSnow": {
+    "id": "powderSnow",
+    "type": "ice",
+    "power": 40,
+    "rarity": 1
+  },
+  "icicleSpear": {
+    "id": "icicleSpear",
+    "type": "ice",
+    "power": 20,
+    "rarity": 2
+  },
+  "hail": {
+    "id": "hail",
+    "type": "ice",
+    "power": 0,
+    "rarity": 2
+  },
+  "icyWind": {
+    "id": "icyWind",
+    "type": "ice",
+    "power": 55,
+    "rarity": 2
+  },
+  "avalanche": {
+    "id": "avalanche",
+    "type": "ice",
+    "power": 60,
+    "rarity": 2
+  },
+  "frostBreath": {
+    "id": "frostBreath",
+    "type": "ice",
+    "power": 60,
+    "rarity": 2
+  },
+  "auroraBeam": {
+    "id": "auroraBeam",
+    "type": "ice",
+    "power": 65,
+    "rarity": 2
+  },
+  "iceFang": {
+    "id": "iceFang",
+    "type": "ice",
+    "power": 65,
+    "rarity": 2
+  },
+  "icePunch": {
+    "id": "icePunch",
+    "type": "ice",
+    "power": 75,
+    "rarity": 2
+  },
+  "iceBeam": {
+    "id": "iceBeam",
+    "type": "ice",
+    "power": 90,
+    "rarity": 3
+  },
+  "blizzard": {
+    "id": "blizzard",
+    "type": "ice",
+    "power": 100,
+    "rarity": 3
+  },
+  "icicleCrash": {
+    "id": "icicleCrash",
+    "type": "ice",
+    "power": 85,
+    "rarity": 3
+  },
+  "safeguard": {
+    "id": "safeguard",
+    "type": "ice",
+    "power": 0,
+    "rarity": 3
+  },
+  "freezyFrost": {
+    "id": "freezyFrost",
+    "type": "ice",
+    "rarity": 3
+  },
+  "twineedle": {
+    "id": "twineedle",
+    "type": "bug",
+    "power": 25,
+    "rarity": 1
+  },
+  "furyCutter": {
+    "id": "furyCutter",
+    "type": "bug",
+    "power": 20,
+    "rarity": 1
+  },
+  "infestation": {
+    "id": "infestation",
+    "type": "bug",
+    "power": 20,
+    "rarity": 2
+  },
+  "pinMissile": {
+    "id": "pinMissile",
+    "type": "bug",
+    "power": 20,
+    "rarity": 2
+  },
+  "stickyWeb": {
+    "id": "stickyWeb",
+    "type": "bug",
+    "power": 0,
+    "rarity": 2
+  },
+  "pounce": {
+    "id": "pounce",
+    "type": "bug",
+    "power": 50,
+    "rarity": 2
+  },
+  "struggleBug": {
+    "id": "struggleBug",
+    "type": "bug",
+    "power": 50,
+    "rarity": 2
+  },
+  "bugBite": {
+    "id": "bugBite",
+    "type": "bug",
+    "power": 60,
+    "rarity": 2
+  },
+  "bugBuzz": {
+    "id": "bugBuzz",
+    "type": "bug",
+    "power": 90,
+    "rarity": 3
+  },
+  "signalBeam": {
+    "id": "signalBeam",
+    "type": "bug",
+    "power": 70,
+    "rarity": 3
+  },
+  "silverWind": {
+    "id": "silverWind",
+    "type": "bug",
+    "power": 55,
+    "rarity": 3
+  },
+  "xScissor": {
+    "id": "xScissor",
+    "type": "bug",
+    "power": 80,
+    "rarity": 3
+  },
+  "firstImpression": {
+    "id": "firstImpression",
+    "type": "bug",
+    "power": 120,
+    "rarity": 3
+  },
+  "stringShot": {
+    "id": "stringShot",
+    "type": "bug",
+    "power": 0,
+    "rarity": 3
+  },
+  "uTurn": {
+    "id": "uTurn",
+    "type": "bug",
+    "power": 70,
+    "rarity": 3
+  },
+  "weirdRoom": {
+    "id": "weirdRoom",
+    "type": "bug",
+    "power": 0,
+    "rarity": 3
+  },
+  "savageStinger": {
+    "id": "savageStinger",
+    "type": "bug",
+    "rarity": 3
+  },
+  "quiverDance": {
+    "id": "quiverDance",
+    "type": "bug",
+    "power": 0,
+    "rarity": 3,
+    "restricted": true
+  },
+  "waterGun": {
+    "id": "waterGun",
+    "type": "water",
+    "power": 40,
+    "rarity": 1
+  },
+  "aquaJet": {
+    "id": "aquaJet",
+    "type": "water",
+    "power": 40,
+    "rarity": 1
+  },
+  "whirlpool": {
+    "id": "whirlpool",
+    "type": "water",
+    "power": 20,
+    "rarity": 2
+  },
+  "waterPulse": {
+    "id": "waterPulse",
+    "type": "water",
+    "power": 60,
+    "rarity": 2
+  },
+  "chillingWater": {
+    "id": "chillingWater",
+    "type": "water",
+    "power": 50,
+    "rarity": 2
+  },
+  "bubbleBeam": {
+    "id": "bubbleBeam",
+    "type": "water",
+    "power": 65,
+    "rarity": 2
+  },
+  "foamShot": {
+    "id": "foamShot",
+    "type": "water",
+    "power": 20,
+    "rarity": 2
+  },
+  "rainDance": {
+    "id": "rainDance",
+    "type": "water",
+    "power": 0,
+    "rarity": 3
+  },
+  "waterfall": {
+    "id": "waterfall",
+    "type": "water",
+    "power": 80,
+    "rarity": 3
+  },
+  "scald": {
+    "id": "scald",
+    "type": "water",
+    "power": 75,
+    "rarity": 3
+  },
+  "liquidation": {
+    "id": "liquidation",
+    "type": "water",
+    "power": 80,
+    "rarity": 3
+  },
+  "aquaTail": {
+    "id": "aquaTail",
+    "type": "water",
+    "power": 90,
+    "rarity": 3
+  },
+  "surf": {
+    "id": "surf",
+    "type": "water",
+    "power": 90,
+    "rarity": 3
+  },
+  "muddyWater": {
+    "id": "muddyWater",
+    "type": "water",
+    "power": 100,
+    "rarity": 3
+  },
+  "hydroPump": {
+    "id": "hydroPump",
+    "type": "water",
+    "power": 120,
+    "rarity": 3
+  },
+  "waveCrash": {
+    "id": "waveCrash",
+    "type": "water",
+    "rarity": 3
+  },
+  "leafage": {
+    "id": "leafage",
+    "type": "grass",
+    "power": 40,
+    "rarity": 1
+  },
+  "vineWhip": {
+    "id": "vineWhip",
+    "type": "grass",
+    "power": 45,
+    "rarity": 1
+  },
+  "magicalLeaf": {
+    "id": "magicalLeaf",
+    "type": "grass",
+    "power": 50,
+    "rarity": 2
+  },
+  "bulletSeed": {
+    "id": "bulletSeed",
+    "type": "grass",
+    "power": 20,
+    "rarity": 2
+  },
+  "razorLeaf": {
+    "id": "razorLeaf",
+    "type": "grass",
+    "power": 65,
+    "rarity": 2
+  },
+  "stunSpore": {
+    "id": "stunSpore",
+    "type": "grass",
+    "power": 0,
+    "rarity": 2
+  },
+  "ragePowder": {
+    "id": "ragePowder",
+    "type": "grass",
+    "power": 0,
+    "rarity": 2
+  },
+  "leafBlade": {
+    "id": "leafBlade",
+    "type": "grass",
+    "power": 80,
+    "rarity": 3
+  },
+  "energyBall": {
+    "id": "energyBall",
+    "type": "grass",
+    "power": 90,
+    "rarity": 3
+  },
+  "solarBeam": {
+    "id": "solarBeam",
+    "type": "grass",
+    "power": 120,
+    "rarity": 3
+  },
+  "solarBlade": {
+    "id": "solarBlade",
+    "type": "grass",
+    "power": 125,
+    "rarity": 3
+  },
+  "seedBomb": {
+    "id": "seedBomb",
+    "type": "grass",
+    "power": 90,
+    "rarity": 3
+  },
+  "cottonSpore": {
+    "id": "cottonSpore",
+    "type": "grass",
+    "power": 0,
+    "rarity": 3
+  },
+  "spore": {
+    "id": "spore",
+    "type": "grass",
+    "power": 0,
+    "rarity": 3
+  },
+  "grassyTerrain": {
+    "id": "grassyTerrain",
+    "type": "grass",
+    "power": 0,
+    "rarity": 3
+  },
+  "leafStorm": {
+    "id": "leafStorm",
+    "type": "grass",
+    "rarity": 3
+  },
+  "rockSmash": {
+    "id": "rockSmash",
+    "type": "fighting",
+    "power": 40,
+    "rarity": 1
+  },
+  "vacuumWave": {
+    "id": "vacuumWave",
+    "type": "fighting",
+    "power": 40,
+    "rarity": 1
+  },
+  "machPunk": {
+    "id": "machPunk",
+    "type": "fighting",
+    "power": 40,
+    "rarity": 1
+  },
+  "armThrust": {
+    "id": "armThrust",
+    "type": "fighting",
+    "power": 20,
+    "rarity": 2
+  },
+  "powerupPunch": {
+    "id": "powerupPunch",
+    "type": "fighting",
+    "power": 50,
+    "rarity": 2
+  },
+  "stormThrow": {
+    "id": "stormThrow",
+    "type": "fighting",
+    "power": 60,
+    "rarity": 2
+  },
+  "lowSweep": {
+    "id": "lowSweep",
+    "type": "fighting",
+    "power": 60,
+    "rarity": 2
+  },
+  "forcePalm": {
+    "id": "forcePalm",
+    "type": "fighting",
+    "power": 75,
+    "rarity": 2
+  },
+  "brickBreak": {
+    "id": "brickBreak",
+    "type": "fighting",
+    "power": 70,
+    "rarity": 3
+  },
+  "skyUppercut": {
+    "id": "skyUppercut",
+    "type": "fighting",
+    "power": 85,
+    "rarity": 3
+  },
+  "hammerArm": {
+    "id": "hammerArm",
+    "type": "fighting",
+    "rarity": 3
+  },
+  "auraSphere": {
+    "id": "auraSphere",
+    "type": "fighting",
+    "power": 80,
+    "rarity": 3
+  },
+  "bulkUp": {
+    "id": "bulkUp",
+    "type": "fighting",
+    "power": 0,
+    "rarity": 3,
+    "restricted": true
+  },
+  "crossChop": {
+    "id": "crossChop",
+    "type": "fighting",
+    "power": 90,
+    "rarity": 3
+  },
+  "closeCombat": {
+    "id": "closeCombat",
+    "type": "fighting",
+    "power": 120,
+    "rarity": 3
+  },
+  "superpower": {
+    "id": "superpower",
+    "type": "fighting",
+    "power": 150,
+    "rarity": 3
+  },
+  "focusBlast": {
+    "id": "focusBlast",
+    "type": "fighting",
+    "power": 100,
+    "rarity": 3
+  },
+  "crossRoom": {
+    "id": "crossRoom",
+    "type": "fighting",
+    "power": 0,
+    "rarity": 3
+  },
+  "confusion": {
+    "id": "confusion",
+    "type": "psychic",
+    "power": 35,
+    "rarity": 1
+  },
+  "psybeam": {
+    "id": "psybeam",
+    "type": "psychic",
+    "power": 60,
+    "rarity": 2
+  },
+  "futureSight": {
+    "id": "futureSight",
+    "type": "psychic",
+    "power": 120,
+    "rarity": 2
+  },
+  "psychoCut": {
+    "id": "psychoCut",
+    "type": "psychic",
+    "power": 75,
+    "rarity": 2
+  },
+  "psychicFangs": {
+    "id": "psychicFangs",
+    "type": "psychic",
+    "power": 75,
+    "rarity": 2
+  },
+  "zenHeadbut": {
+    "id": "zenHeadbut",
+    "type": "psychic",
+    "power": 90,
+    "rarity": 3
+  },
+  "twinBeam": {
+    "id": "twinBeam",
+    "type": "psychic",
+    "power": 40,
+    "rarity": 3
+  },
+  "psychic": {
+    "id": "psychic",
+    "type": "psychic",
+    "power": 90,
+    "rarity": 3
+  },
+  "extrasensory": {
+    "id": "extrasensory",
+    "type": "psychic",
+    "power": 100,
+    "rarity": 3
+  },
+  "amnesia": {
+    "id": "amnesia",
+    "type": "psychic",
+    "power": 0,
+    "rarity": 3
+  },
+  "barrier": {
+    "id": "barrier",
+    "type": "psychic",
+    "power": 0,
+    "rarity": 3
+  },
+  "agility": {
+    "id": "agility",
+    "type": "psychic",
+    "power": 0,
+    "rarity": 3,
+    "restricted": true
+  },
+  "calmMind": {
+    "id": "calmMind",
+    "type": "psychic",
+    "power": 0,
+    "rarity": 3,
+    "restricted": true
+  },
+  "psychoBoost": {
+    "id": "psychoBoost",
+    "type": "psychic",
+    "rarity": 3
+  },
+  "reflect": {
+    "id": "reflect",
+    "type": "psychic",
+    "power": 0,
+    "rarity": 3
+  },
+  "rockThrow": {
+    "id": "rockThrow",
+    "type": "rock",
+    "power": 50,
+    "rarity": 1
+  },
+  "accelerock": {
+    "id": "accelerock",
+    "type": "rock",
+    "power": 40,
+    "rarity": 1
+  },
+  "rockBlast": {
+    "id": "rockBlast",
+    "type": "rock",
+    "power": 20,
+    "rarity": 2
+  },
+  "rollout": {
+    "id": "rollout",
+    "type": "rock",
+    "power": 55,
+    "rarity": 2
+  },
+  "ancientPower": {
+    "id": "ancientPower",
+    "type": "rock",
+    "power": 60,
+    "rarity": 2
+  },
+  "smackDown": {
+    "id": "smackDown",
+    "type": "rock",
+    "power": 50,
+    "rarity": 2
+  },
+  "gemstoneCrush": {
+    "id": "gemstoneCrush",
+    "type": "rock",
+    "power": 20,
+    "rarity": 2
+  },
+  "rockTomb": {
+    "id": "rockTomb",
+    "type": "rock",
+    "power": 60,
+    "rarity": 3
+  },
+  "rockSlide": {
+    "id": "rockSlide",
+    "type": "rock",
+    "power": 75,
+    "rarity": 3
+  },
+  "powerGem": {
+    "id": "powerGem",
+    "type": "rock",
+    "power": 85,
+    "rarity": 3
+  },
+  "stoneEdge": {
+    "id": "stoneEdge",
+    "type": "rock",
+    "power": 100,
+    "rarity": 3
+  },
+  "meteorBeam": {
+    "id": "meteorBeam",
+    "type": "rock",
+    "power": 120,
+    "rarity": 3
+  },
+  "rockPolish": {
+    "id": "rockPolish",
+    "type": "rock",
+    "power": 0,
+    "rarity": 3,
+    "restricted": true
+  },
+  "wrathOfTheLand": {
+    "id": "wrathOfTheLand",
+    "type": "rock",
+    "rarity": 3
+  },
+  "lick": {
+    "id": "lick",
+    "type": "ghost",
+    "power": 30,
+    "rarity": 1
+  },
+  "shadowSneak": {
+    "id": "shadowSneak",
+    "type": "ghost",
+    "power": 40,
+    "rarity": 1
+  },
+  "confuseRay": {
+    "id": "confuseRay",
+    "type": "ghost",
+    "power": 0,
+    "rarity": 2
+  },
+  "willOWisp": {
+    "id": "willOWisp",
+    "type": "ghost",
+    "power": 0,
+    "rarity": 2
+  },
+  "fog": {
+    "id": "fog",
+    "type": "ghost",
+    "power": 0,
+    "rarity": 2
+  },
+  "ominousWind": {
+    "id": "ominousWind",
+    "type": "ghost",
+    "power": 60,
+    "rarity": 2
+  },
+  "hex": {
+    "id": "hex",
+    "type": "ghost",
+    "power": 65,
+    "rarity": 2
+  },
+  "shadowClaw": {
+    "id": "shadowClaw",
+    "type": "ghost",
+    "power": 60,
+    "rarity": 2
+  },
+  "shadowPunch": {
+    "id": "shadowPunch",
+    "type": "ghost",
+    "power": 75,
+    "rarity": 2
+  },
+  "shadowBall": {
+    "id": "shadowBall",
+    "type": "ghost",
+    "power": 80,
+    "rarity": 3
+  },
+  "phantomForce": {
+    "id": "phantomForce",
+    "type": "ghost",
+    "power": 120,
+    "rarity": 3
+  },
+  "twister": {
+    "id": "twister",
+    "type": "dragon",
+    "power": 40,
+    "rarity": 1
+  },
+  "dragonTail": {
+    "id": "dragonTail",
+    "type": "dragon",
+    "power": 60,
+    "rarity": 2
+  },
+  "dualChop": {
+    "id": "dualChop",
+    "type": "dragon",
+    "power": 40,
+    "rarity": 2
+  },
+  "dragonBreath": {
+    "id": "dragonBreath",
+    "type": "dragon",
+    "power": 65,
+    "rarity": 2
+  },
+  "dragonClaw": {
+    "id": "dragonClaw",
+    "type": "dragon",
+    "power": 65,
+    "rarity": 2
+  },
+  "scaleShot": {
+    "id": "scaleShot",
+    "type": "dragon",
+    "power": 20,
+    "rarity": 2
+  },
+  "dragonPulse": {
+    "id": "dragonPulse",
+    "type": "dragon",
+    "power": 85,
+    "rarity": 3
+  },
+  "dragonRush": {
+    "id": "dragonRush",
+    "type": "dragon",
+    "power": 90,
+    "rarity": 3
+  },
+  "outrage": {
+    "id": "outrage",
+    "type": "dragon",
+    "rarity": 3
+  },
+  "dracoMeteor": {
+    "id": "dracoMeteor",
+    "type": "dragon",
+    "rarity": 3
+  },
+  "dragonDance": {
+    "id": "dragonDance",
+    "type": "dragon",
+    "power": 0,
+    "rarity": 3,
+    "restricted": true
+  },
+  "pursuit": {
+    "id": "pursuit",
+    "type": "dark",
+    "power": 40,
+    "rarity": 1
+  },
+  "snarl": {
+    "id": "snarl",
+    "type": "dark",
+    "power": 55,
+    "rarity": 2
+  },
+  "bite": {
+    "id": "bite",
+    "type": "dark",
+    "power": 60,
+    "rarity": 2
+  },
+  "feintAttack": {
+    "id": "feintAttack",
+    "type": "dark",
+    "power": 40,
+    "rarity": 2
+  },
+  "knockOff": {
+    "id": "knockOff",
+    "type": "dark",
+    "power": 65,
+    "rarity": 2
+  },
+  "crunch": {
+    "id": "crunch",
+    "type": "dark",
+    "power": 70,
+    "rarity": 2
+  },
+  "darkPulse": {
+    "id": "darkPulse",
+    "type": "dark",
+    "power": 80,
+    "rarity": 3
+  },
+  "honeClaws": {
+    "id": "honeClaws",
+    "type": "dark",
+    "power": 0,
+    "rarity": 3,
+    "restricted": true
+  },
+  "nightDaze": {
+    "id": "nightDaze",
+    "type": "dark",
+    "power": 85,
+    "rarity": 3
+  },
+  "nightSlash": {
+    "id": "nightSlash",
+    "type": "dark",
+    "power": 85,
+    "rarity": 3
+  },
+  "fakeTears": {
+    "id": "fakeTears",
+    "type": "dark",
+    "power": 0,
+    "rarity": 3,
+    "restricted": true
+  },
+  "nastyPlot": {
+    "id": "nastyPlot",
+    "type": "dark",
+    "power": 0,
+    "rarity": 3,
+    "restricted": true
+  },
+  "memento": {
+    "id": "memento",
+    "type": "dark",
+    "power": 0,
+    "rarity": 3
+  },
+  "trickRoom": {
+    "id": "trickRoom",
+    "type": "dark",
+    "power": 0,
+    "rarity": 3
+  },
+  "embargo": {
+    "id": "embargo",
+    "type": "dark",
+    "power": 0,
+    "rarity": 3
+  },
+  "brutalSwing": {
+    "id": "brutalSwing",
+    "type": "dark",
+    "rarity": 3
+  },
+  "disarmingVoice": {
+    "id": "disarmingVoice",
+    "type": "fairy",
+    "power": 40,
+    "rarity": 1
+  },
+  "drainingKiss": {
+    "id": "drainingKiss",
+    "type": "fairy",
+    "power": 50,
+    "rarity": 2
+  },
+  "fairyWind": {
+    "id": "fairyWind",
+    "type": "fairy",
+    "power": 60,
+    "rarity": 2
+  },
+  "echoedVoice": {
+    "id": "echoedVoice",
+    "type": "fairy",
+    "power": 50,
+    "rarity": 2
+  },
+  "alluringVoice": {
+    "id": "alluringVoice",
+    "type": "fairy",
+    "power": 65,
+    "rarity": 2
+  },
+  "mirrorShrapnel": {
+    "id": "mirrorShrapnel",
+    "type": "fairy",
+    "power": 20,
+    "rarity": 2
+  },
+  "spiritBreak": {
+    "id": "spiritBreak",
+    "type": "fairy",
+    "power": 75,
+    "rarity": 3
+  },
+  "dazzlingGleam": {
+    "id": "dazzlingGleam",
+    "type": "fairy",
+    "power": 85,
+    "rarity": 3
+  },
+  "playRough": {
+    "id": "playRough",
+    "type": "fairy",
+    "power": 90,
+    "rarity": 3
+  },
+  "auroraPunch": {
+    "id": "auroraPunch",
+    "type": "fairy",
+    "power": 80,
+    "rarity": 3
+  },
+  "moonblast": {
+    "id": "moonblast",
+    "type": "fairy",
+    "power": 95,
+    "rarity": 3
+  },
+  "babydollEyes": {
+    "id": "babydollEyes",
+    "type": "fairy",
+    "power": 0,
+    "rarity": 1
+  },
+  "charm": {
+    "id": "charm",
+    "type": "fairy",
+    "power": 0,
+    "rarity": 2
+  },
+  "sweetKiss": {
+    "id": "sweetKiss",
+    "type": "fairy",
+    "power": 0,
+    "rarity": 1
+  },
+  "mistyTerrain": {
+    "id": "mistyTerrain",
+    "type": "fairy",
+    "power": 0,
+    "rarity": 3
+  },
+  "lightScreen": {
+    "id": "lightScreen",
+    "type": "fairy",
+    "power": 0,
+    "rarity": 3
+  },
+  "magicalTorque": {
+    "id": "magicalTorque",
+    "type": "fairy",
+    "rarity": 3
+  },
+  "acupressure": {
+    "id": "acupressure",
+    "type": "normal",
+    "power": 0
+  },
+  "batonPass": {
+    "id": "batonPass",
+    "type": "normal",
+    "power": 0
+  },
+  "bellyDrum": {
+    "id": "bellyDrum",
+    "type": "normal",
+    "power": 0,
+    "restricted": true
+  },
+  "boomburst": {
+    "id": "boomburst",
+    "type": "normal"
+  },
+  "eggBomb": {
+    "id": "eggBomb",
+    "type": "normal"
+  },
+  "cometPunch": {
+    "id": "cometPunch",
+    "type": "flying"
+  },
+  "payDay": {
+    "id": "payDay",
+    "type": "normal",
+    "power": 0
+  },
+  "teatime": {
+    "id": "teatime",
+    "type": "normal",
+    "power": 0
+  },
+  "metronome": {
+    "id": "metronome",
+    "type": "normal",
+    "power": 0
+  },
+  "mimic": {
+    "id": "mimic",
+    "type": "psychic",
+    "power": 0
+  },
+  "meFirst": {
+    "id": "meFirst",
+    "type": "normal",
+    "power": 0
+  },
+  "burnUp": {
+    "id": "burnUp",
+    "type": "fire"
+  },
+  "magmaStorm": {
+    "id": "magmaStorm",
+    "type": "fire"
+  },
+  "inferno": {
+    "id": "inferno",
+    "type": "fire"
+  },
+  "aquaStep": {
+    "id": "aquaStep",
+    "type": "water"
+  },
+  "hydroCannon": {
+    "id": "hydroCannon",
+    "type": "water"
+  },
+  "gigatonHammer": {
+    "id": "gigatonHammer",
+    "type": "steel"
+  },
+  "razorShell": {
+    "id": "razorShell",
+    "type": "water"
+  },
+  "tripleDive": {
+    "id": "tripleDive",
+    "type": "water"
+  },
+  "electroBall": {
+    "id": "electroBall",
+    "type": "electric"
+  },
+  "charge": {
+    "id": "charge",
+    "type": "electric",
+    "power": 0,
+    "restricted": true
+  },
+  "ionise": {
+    "id": "ionise",
+    "type": "electric",
+    "power": 0,
+    "restricted": true
+  },
+  "appleAcid": {
+    "id": "appleAcid",
+    "type": "grass"
+  },
+  "chloroblast": {
+    "id": "chloroblast",
+    "type": "grass"
+  },
+  "frenzyPlant": {
+    "id": "frenzyPlant",
+    "type": "grass"
+  },
+  "trailblaze": {
+    "id": "trailblaze",
+    "type": "grass"
+  },
+  "auraWheel": {
+    "id": "auraWheel",
+    "type": "electric"
+  },
+  "freezeDry": {
+    "id": "freezeDry",
+    "type": "ice"
+  },
+  "snowscape": {
+    "id": "snowscape",
+    "type": "ice",
+    "power": 0
+  },
+  "venoshock": {
+    "id": "venoshock",
+    "type": "poison"
+  },
+  "toxicThread": {
+    "id": "toxicThread",
+    "type": "poison",
+    "power": 0
+  },
+  "highHorsepower": {
+    "id": "highHorsepower",
+    "type": "ground"
+  },
+  "blazeKick": {
+    "id": "blazeKick",
+    "type": "fire"
+  },
+  "pyroBall": {
+    "id": "pyroBall",
+    "type": "fire"
+  },
+  "braveBird": {
+    "id": "braveBird",
+    "type": "flying"
+  },
+  "spectralThief": {
+    "id": "spectralThief",
+    "type": "ghost"
+  },
+  "snipeShot": {
+    "id": "snipeShot",
+    "type": "water"
+  },
+  "moongeistBeam": {
+    "id": "moongeistBeam",
+    "type": "ghost"
+  },
+  "sunsteelStrike": {
+    "id": "sunsteelStrike",
+    "type": "steel"
+  },
+  "rockWrecker": {
+    "id": "rockWrecker",
+    "type": "rock"
+  },
+  "aeroblast": {
+    "id": "aeroblast",
+    "type": "flying"
+  },
+  "sacredFire": {
+    "id": "sacredFire",
+    "type": "fire"
+  },
+  "crabhammer": {
+    "id": "crabhammer",
+    "type": "water"
+  },
+  "iceHammer": {
+    "id": "iceHammer",
+    "type": "ice"
+  },
+  "dragonDarts": {
+    "id": "dragonDarts",
+    "type": "dragon",
+    "power": 50
+  },
+  "hiJumpKick": {
+    "id": "hiJumpKick",
+    "type": "fighting"
+  },
+  "falseSurrender": {
+    "id": "falseSurrender",
+    "type": "dark"
+  },
+  "headCharge": {
+    "id": "headCharge",
+    "type": "normal"
+  },
+  "megahorn": {
+    "id": "megahorn",
+    "type": "bug"
+  },
+  "needleArm": {
+    "id": "needleArm",
+    "type": "grass"
+  },
+  "anchorShot": {
+    "id": "anchorShot",
+    "type": "steel"
+  },
+  "darkestLariat": {
+    "id": "darkestLariat",
+    "type": "dark"
+  },
+  "dragonEnergy": {
+    "id": "dragonEnergy",
+    "type": "dragon"
+  },
+  "thunderCage": {
+    "id": "thunderCage",
+    "type": "electric"
+  },
+  "ruination": {
+    "id": "ruination",
+    "type": "dark"
+  },
+  "mindBlown": {
+    "id": "mindBlown",
+    "type": "fire"
+  },
+  "sparklingAria": {
+    "id": "sparklingAria",
+    "type": "water"
+  },
+  "floralHealing": {
+    "id": "floralHealing",
+    "type": "fairy",
+    "power": 0
+  },
+  "revelationDance": {
+    "id": "revelationDance",
+    "type": "normal",
+    "power": 100
+  },
+  "weatherBall": {
+    "id": "weatherBall",
+    "type": "normal"
+  },
+  "poisonTail": {
+    "id": "poisonTail",
+    "type": "poison"
+  },
+  "heatCrash": {
+    "id": "heatCrash",
+    "type": "fire"
+  },
+  "chatter": {
+    "id": "chatter",
+    "type": "flying"
+  },
+  "voltTackle": {
+    "id": "voltTackle",
+    "type": "electric"
+  },
+  "zingZap": {
+    "id": "zingZap",
+    "type": "electric"
+  },
+  "lovelyKiss": {
+    "id": "lovelyKiss",
+    "type": "fairy"
+  },
+  "crushGrip": {
+    "id": "crushGrip",
+    "type": "normal"
+  },
+  "lightOfRuin": {
+    "id": "lightOfRuin",
+    "type": "fairy",
+    "power": 300
+  },
+  "spacialRend": {
+    "id": "spacialRend",
+    "type": "dragon"
+  },
+  "fishiousRend": {
+    "id": "fishiousRend",
+    "type": "water",
+    "power": 100
+  },
+  "armorCannon": {
+    "id": "armorCannon",
+    "type": "fire"
+  },
+  "bitterBlade": {
+    "id": "bitterBlade",
+    "type": "fire"
+  },
+  "brutalClaw": {
+    "id": "brutalClaw",
+    "type": "fire"
+  },
+  "noRetreat": {
+    "id": "noRetreat",
+    "type": "fighting",
+    "power": 0,
+    "restricted": true
+  },
+  "storedPower": {
+    "id": "storedPower",
+    "type": "psychic",
+    "power": 60
+  },
+  "chillyReception": {
+    "id": "chillyReception",
+    "type": "ice",
+    "power": 0
+  },
+  "camouflage": {
+    "id": "camouflage",
+    "type": "bug",
+    "power": 0,
+    "restricted": true
+  },
+  "tailGlow": {
+    "id": "tailGlow",
+    "type": "bug",
+    "power": 0,
+    "restricted": true
+  },
+  "luminaCrash": {
+    "id": "luminaCrash",
+    "type": "psychic"
+  },
+  "flyingPress": {
+    "id": "flyingPress",
+    "type": "fighting"
+  },
+  "mountainGale": {
+    "id": "mountainGale",
+    "type": "ice"
+  },
+  "jetPunch": {
+    "id": "jetPunch",
+    "type": "water"
+  },
+  "roarOfTime": {
+    "id": "roarOfTime",
+    "type": "dragon"
+  },
+  "doomDesire": {
+    "id": "doomDesire",
+    "type": "steel"
+  },
+  "beakBlast": {
+    "id": "beakBlast",
+    "type": "normal"
+  },
+  "shadowForce": {
+    "id": "shadowForce",
+    "type": "ghost"
+  },
+  "blueFlare": {
+    "id": "blueFlare",
+    "type": "fire"
+  },
+  "boltStrike": {
+    "id": "boltStrike",
+    "type": "electric"
+  },
+  "glaciate": {
+    "id": "glaciate",
+    "type": "ice"
+  },
+  "howl": {
+    "id": "howl",
+    "type": "normal",
+    "power": 0
+  },
+  "lunarDance": {
+    "id": "lunarDance",
+    "type": "psychic",
+    "power": 0
+  },
+  "aromaticMist": {
+    "id": "aromaticMist",
+    "type": "fairy",
+    "power": 0
+  },
+  "fairyLock": {
+    "id": "fairyLock",
+    "type": "fairy",
+    "power": 0
+  },
+  "electrify": {
+    "id": "electrify",
+    "type": "electric",
+    "power": 0
+  },
+  "forestCurse": {
+    "id": "forestCurse",
+    "type": "grass",
+    "power": 0
+  },
+  "trickOrTreat": {
+    "id": "trickOrTreat",
+    "type": "ghost",
+    "power": 0
+  },
+  "soak": {
+    "id": "soak",
+    "type": "water",
+    "power": 0
+  },
+  "magicPowder": {
+    "id": "magicPowder",
+    "type": "psychic",
+    "power": 0
+  },
+  "mudSport": {
+    "id": "mudSport",
+    "type": "ground",
+    "power": 0
+  },
+  "boneRush": {
+    "id": "boneRush",
+    "type": "ground"
+  },
+  "clamp": {
+    "id": "clamp",
+    "type": "water"
+  },
+  "waterShuriken": {
+    "id": "waterShuriken",
+    "type": "water"
+  },
+  "barbBarrage": {
+    "id": "barbBarrage",
+    "type": "poison",
+    "power": 40
+  },
+  "barrage": {
+    "id": "barrage",
+    "type": "grass"
+  },
+  "mysticalPower": {
+    "id": "mysticalPower",
+    "type": "psychic"
+  },
+  "psyshieldBash": {
+    "id": "psyshieldBash",
+    "type": "psychic"
+  },
+  "sketch": {
+    "id": "sketch",
+    "type": "normal",
+    "power": 0
+  },
+  "prismaticLaser": {
+    "id": "prismaticLaser",
+    "type": "psychic"
+  },
+  "lusterPurge": {
+    "id": "lusterPurge",
+    "type": "psychic"
+  },
+  "mistBall": {
+    "id": "mistBall",
+    "type": "psychic"
+  },
+  "dynamicPunch": {
+    "id": "dynamicPunch",
+    "type": "fighting"
+  },
+  "thunderousKick": {
+    "id": "thunderousKick",
+    "type": "fighting"
+  },
+  "fieryWrath": {
+    "id": "fieryWrath",
+    "type": "dark"
+  },
+  "freezingGlare": {
+    "id": "freezingGlare",
+    "type": "psychic"
+  },
+  "meteorAssault": {
+    "id": "meteorAssault",
+    "type": "fighting"
+  },
+  "cottonGuard": {
+    "id": "cottonGuard",
+    "type": "grass",
+    "power": 0
+  },
+  "kingsShield": {
+    "id": "kingsShield",
+    "type": "steel",
+    "power": 0
+  },
+  "drumBeating": {
+    "id": "drumBeating",
+    "type": "grass"
+  },
+  "tropKick": {
+    "id": "tropKick",
+    "type": "grass"
+  },
+  "fireLash": {
+    "id": "fireLash",
+    "type": "fire"
+  },
+  "clangingScales": {
+    "id": "clangingScales",
+    "type": "dragon"
+  },
+  "shiftGear": {
+    "id": "shiftGear",
+    "type": "steel",
+    "power": 0,
+    "restricted": true
+  },
+  "kinesis": {
+    "id": "kinesis",
+    "type": "psychic",
+    "power": 0,
+    "restricted": true
+  },
+  "gearUp": {
+    "id": "gearUp",
+    "type": "steel",
+    "power": 0,
+    "restricted": true
+  },
+  "relicSong": {
+    "id": "relicSong",
+    "type": "normal"
+  },
+  "zapCannon": {
+    "id": "zapCannon",
+    "type": "electric"
+  },
+  "triAttack": {
+    "id": "triAttack",
+    "type": "normal"
+  },
+  "judgment": {
+    "id": "judgment",
+    "type": "normal"
+  },
+  "rageFist": {
+    "id": "rageFist",
+    "type": "ghost"
+  },
+  "iceBall": {
+    "id": "iceBall",
+    "type": "ice"
+  },
+  "tripleAxel": {
+    "id": "tripleAxel",
+    "type": "ice"
+  },
+  "attackOrder": {
+    "id": "attackOrder",
+    "type": "bug"
+  },
+  "populationBomb": {
+    "id": "populationBomb",
+    "type": "normal"
+  },
+  "nobleRoar": {
+    "id": "nobleRoar",
+    "type": "normal",
+    "power": 0
+  },
+  "hyperDrill": {
+    "id": "hyperDrill",
+    "type": "normal"
+  },
+  "fieryDance": {
+    "id": "fieryDance",
+    "type": "fire"
+  },
+  "torchSong": {
+    "id": "torchSong",
+    "type": "fire"
+  },
+  "seedFlare": {
+    "id": "seedFlare",
+    "type": "grass"
+  },
+  "vCreate": {
+    "id": "vCreate",
+    "type": "fire"
+  },
+  "dragonAscent": {
+    "id": "dragonAscent",
+    "type": "flying"
+  },
+  "mysticalFire": {
+    "id": "mysticalFire",
+    "type": "fire"
+  },
+  "headlongRush": {
+    "id": "headlongRush",
+    "type": "ground"
+  },
+  "sandsearStorm": {
+    "id": "sandsearStorm",
+    "type": "ground"
+  },
+  "splash": {
+    "id": "splash",
+    "type": "normal",
+    "power": 0
+  },
+  "conversion": {
+    "id": "conversion",
+    "type": "normal",
+    "power": 0,
+    "restricted": true
+  },
+  "flameBurst": {
+    "id": "flameBurst",
+    "type": "fire"
+  },
+  "morningSun": {
+    "id": "morningSun",
+    "type": "normal",
+    "power": 0
+  }
+}

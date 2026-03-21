@@ -1,0 +1,24 @@
+#bg-pattern {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-image: url('img/bg/main-bg.png');
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    opacity: 0.1;
+    animation: bg-horizontal 600s linear infinite reverse;
+}
+
+#main-content{
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    background: red;
+    background-color: var(--dark2);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-image: url(img/bg/empty.jpg);
+    background-position: bottom middle;
+    background-size: cover;
+}

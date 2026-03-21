@@ -1,0 +1,853 @@
+{
+  "blackBelt": {
+    "id": "blackBelt",
+    "type": "held"
+  },
+  "blackGlasses": {
+    "id": "blackGlasses",
+    "type": "held"
+  },
+  "charcoal": {
+    "id": "charcoal",
+    "type": "held"
+  },
+  "dragonFang": {
+    "id": "dragonFang",
+    "type": "held"
+  },
+  "fairyFeather": {
+    "id": "fairyFeather",
+    "type": "held"
+  },
+  "hardStone": {
+    "id": "hardStone",
+    "type": "held"
+  },
+  "magnet": {
+    "id": "magnet",
+    "type": "held"
+  },
+  "metalCoat": {
+    "id": "metalCoat",
+    "type": "held"
+  },
+  "miracleSeed": {
+    "id": "miracleSeed",
+    "type": "held"
+  },
+  "mysticWater": {
+    "id": "mysticWater",
+    "type": "held"
+  },
+  "neverMeltIce": {
+    "id": "neverMeltIce",
+    "type": "held"
+  },
+  "poisonBarb": {
+    "id": "poisonBarb",
+    "type": "held"
+  },
+  "sharpBeak": {
+    "id": "sharpBeak",
+    "type": "held"
+  },
+  "silkScarf": {
+    "id": "silkScarf",
+    "type": "held"
+  },
+  "silverPowder": {
+    "id": "silverPowder",
+    "type": "held"
+  },
+  "softSand": {
+    "id": "softSand",
+    "type": "held"
+  },
+  "spellTag": {
+    "id": "spellTag",
+    "type": "held"
+  },
+  "twistedSpoon": {
+    "id": "twistedSpoon",
+    "type": "held"
+  },
+  "eviolite": {
+    "id": "eviolite",
+    "type": "held"
+  },
+  "lightClay": {
+    "id": "lightClay",
+    "type": "held"
+  },
+  "mentalHerb": {
+    "id": "mentalHerb",
+    "type": "held"
+  },
+  "flameOrb": {
+    "id": "flameOrb",
+    "type": "held"
+  },
+  "toxicOrb": {
+    "id": "toxicOrb",
+    "type": "held"
+  },
+  "choiceBand": {
+    "id": "choiceBand",
+    "type": "held"
+  },
+  "choiceSpecs": {
+    "id": "choiceSpecs",
+    "type": "held"
+  },
+  "lifeOrb": {
+    "id": "lifeOrb",
+    "type": "held"
+  },
+  "assaultVest": {
+    "id": "assaultVest",
+    "type": "held"
+  },
+  "clearAmulet": {
+    "id": "clearAmulet",
+    "type": "held"
+  },
+  "ejectPack": {
+    "id": "ejectPack",
+    "type": "held"
+  },
+  "ejectButton": {
+    "id": "ejectButton",
+    "type": "held"
+  },
+  "quickClaw": {
+    "id": "quickClaw",
+    "type": "held"
+  },
+  "loadedDice": {
+    "id": "loadedDice",
+    "type": "held"
+  },
+  "metronome": {
+    "id": "metronome",
+    "type": "held"
+  },
+  "powerHerb": {
+    "id": "powerHerb",
+    "type": "held"
+  },
+  "luckyPunch": {
+    "id": "luckyPunch",
+    "type": "held"
+  },
+  "laggingTail": {
+    "id": "laggingTail",
+    "type": "held"
+  },
+  "weaknessPolicy": {
+    "id": "weaknessPolicy",
+    "type": "held"
+  },
+  "heavyDutyBoots": {
+    "id": "heavyDutyBoots",
+    "type": "held"
+  },
+  "leftovers": {
+    "id": "leftovers",
+    "type": "held"
+  },
+  "bugGem": {
+    "id": "bugGem",
+    "type": "held"
+  },
+  "darkGem": {
+    "id": "darkGem",
+    "type": "held"
+  },
+  "dragonGem": {
+    "id": "dragonGem",
+    "type": "held"
+  },
+  "electricGem": {
+    "id": "electricGem",
+    "type": "held"
+  },
+  "fairyGem": {
+    "id": "fairyGem",
+    "type": "held"
+  },
+  "fightingGem": {
+    "id": "fightingGem",
+    "type": "held"
+  },
+  "fireGem": {
+    "id": "fireGem",
+    "type": "held"
+  },
+  "flyingGem": {
+    "id": "flyingGem",
+    "type": "held"
+  },
+  "ghostGem": {
+    "id": "ghostGem",
+    "type": "held"
+  },
+  "grassGem": {
+    "id": "grassGem",
+    "type": "held"
+  },
+  "groundGem": {
+    "id": "groundGem",
+    "type": "held"
+  },
+  "iceGem": {
+    "id": "iceGem",
+    "type": "held"
+  },
+  "normalGem": {
+    "id": "normalGem",
+    "type": "held"
+  },
+  "poisonGem": {
+    "id": "poisonGem",
+    "type": "held"
+  },
+  "psychicGem": {
+    "id": "psychicGem",
+    "type": "held"
+  },
+  "rockGem": {
+    "id": "rockGem",
+    "type": "held"
+  },
+  "steelGem": {
+    "id": "steelGem",
+    "type": "held"
+  },
+  "waterGem": {
+    "id": "waterGem",
+    "type": "held"
+  },
+  "luckIncense": {
+    "id": "luckIncense",
+    "type": "held"
+  },
+  "pureIncense": {
+    "id": "pureIncense",
+    "type": "held"
+  },
+  "luckyEgg": {
+    "id": "luckyEgg",
+    "type": "held"
+  },
+  "shinyCharm": {
+    "id": "shinyCharm",
+    "type": "held"
+  },
+  "occaBerry": {
+    "id": "occaBerry",
+    "type": "held"
+  },
+  "passhoBerry": {
+    "id": "passhoBerry",
+    "type": "held"
+  },
+  "wacanBerry": {
+    "id": "wacanBerry",
+    "type": "held"
+  },
+  "rindoBerry": {
+    "id": "rindoBerry",
+    "type": "held"
+  },
+  "yacheBerry": {
+    "id": "yacheBerry",
+    "type": "held"
+  },
+  "chopleBerry": {
+    "id": "chopleBerry",
+    "type": "held"
+  },
+  "kebiaBerry": {
+    "id": "kebiaBerry",
+    "type": "held"
+  },
+  "shucaBerry": {
+    "id": "shucaBerry",
+    "type": "held"
+  },
+  "cobaBerry": {
+    "id": "cobaBerry",
+    "type": "held"
+  },
+  "payapaBerry": {
+    "id": "payapaBerry",
+    "type": "held"
+  },
+  "tangaBerry": {
+    "id": "tangaBerry",
+    "type": "held"
+  },
+  "chartiBerry": {
+    "id": "chartiBerry",
+    "type": "held"
+  },
+  "kasibBerry": {
+    "id": "kasibBerry",
+    "type": "held"
+  },
+  "habanBerry": {
+    "id": "habanBerry",
+    "type": "held"
+  },
+  "colburBerry": {
+    "id": "colburBerry",
+    "type": "held"
+  },
+  "babiriBerry": {
+    "id": "babiriBerry",
+    "type": "held"
+  },
+  "roseliBerry": {
+    "id": "roseliBerry",
+    "type": "held"
+  },
+  "terrainExtender": {
+    "id": "terrainExtender",
+    "type": "held"
+  },
+  "dampRock": {
+    "id": "dampRock",
+    "type": "held"
+  },
+  "heatRock": {
+    "id": "heatRock",
+    "type": "held"
+  },
+  "icyRock": {
+    "id": "icyRock",
+    "type": "held"
+  },
+  "smoothRock": {
+    "id": "smoothRock",
+    "type": "held"
+  },
+  "electricSeed": {
+    "id": "electricSeed",
+    "type": "held"
+  },
+  "grassySeed": {
+    "id": "grassySeed",
+    "type": "held"
+  },
+  "mistySeed": {
+    "id": "mistySeed",
+    "type": "held"
+  },
+  "foggySeed": {
+    "id": "foggySeed",
+    "type": "held"
+  },
+  "bottleCap": {
+    "id": "bottleCap",
+    "type": "key"
+  },
+  "goldenBottleCap": {
+    "id": "goldenBottleCap",
+    "type": "key"
+  },
+  "timeCandy": {
+    "id": "timeCandy",
+    "type": "key"
+  },
+  "timeCandyXL": {
+    "id": "timeCandyXL",
+    "type": "key"
+  },
+  "festivalTicket": {
+    "id": "festivalTicket",
+    "type": "key"
+  },
+  "rareCandy": {
+    "id": "rareCandy"
+  },
+  "abilityPatch": {
+    "id": "abilityPatch"
+  },
+  "abilityCapsule": {
+    "id": "abilityCapsule"
+  },
+  "heartScale": {
+    "id": "heartScale"
+  },
+  "energyRoot": {
+    "id": "energyRoot",
+    "type": "key"
+  },
+  "fashionCase": {
+    "id": "fashionCase"
+  },
+  "neutralMint": {
+    "id": "neutralMint"
+  },
+  "autoRefightTicket": {
+    "id": "autoRefightTicket",
+    "type": "key"
+  },
+  "yellowApricorn": {
+    "id": "yellowApricorn",
+    "type": "key"
+  },
+  "pinkApricorn": {
+    "id": "pinkApricorn",
+    "type": "key"
+  },
+  "greenApricorn": {
+    "id": "greenApricorn",
+    "type": "key"
+  },
+  "whiteApricorn": {
+    "id": "whiteApricorn",
+    "type": "key"
+  },
+  "blackApricorn": {
+    "id": "blackApricorn",
+    "type": "key"
+  },
+  "megaShard": {
+    "id": "megaShard",
+    "type": "key"
+  },
+  "megaPiece": {
+    "id": "megaPiece",
+    "type": "key"
+  },
+  "megaChunk": {
+    "id": "megaChunk",
+    "type": "key"
+  },
+  "megaCluster": {
+    "id": "megaCluster",
+    "type": "key"
+  },
+  "primalEarth": {
+    "id": "primalEarth",
+    "type": "key"
+  },
+  "thunderousRock": {
+    "id": "thunderousRock",
+    "type": "key"
+  },
+  "articRock": {
+    "id": "articRock",
+    "type": "key"
+  },
+  "ancientOrchid": {
+    "id": "ancientOrchid",
+    "type": "key"
+  },
+  "futureDisk": {
+    "id": "futureDisk",
+    "type": "key"
+  },
+  "ancientKeystone": {
+    "id": "ancientKeystone",
+    "type": "key"
+  },
+  "steelKeystone": {
+    "id": "steelKeystone",
+    "type": "key"
+  },
+  "frozenKeystone": {
+    "id": "frozenKeystone",
+    "type": "key"
+  },
+  "aetherKeycard": {
+    "id": "aetherKeycard",
+    "type": "key"
+  },
+  "wormholeResidue": {
+    "id": "wormholeResidue",
+    "type": "key"
+  },
+  "futureContraption": {
+    "id": "futureContraption",
+    "type": "key"
+  },
+  "redChain": {
+    "id": "redChain",
+    "type": "key"
+  },
+  "wisdomPetal": {
+    "id": "wisdomPetal",
+    "type": "key"
+  },
+  "epochFeather": {
+    "id": "epochFeather",
+    "type": "key"
+  },
+  "pokeflute": {
+    "id": "pokeflute",
+    "type": "key"
+  },
+  "oldGateau": {
+    "id": "oldGateau",
+    "type": "key"
+  },
+  "hpUp": {
+    "id": "hpUp"
+  },
+  "protein": {
+    "id": "protein"
+  },
+  "iron": {
+    "id": "iron"
+  },
+  "calcium": {
+    "id": "calcium"
+  },
+  "zinc": {
+    "id": "zinc"
+  },
+  "carbos": {
+    "id": "carbos"
+  },
+  "waterStone": {
+    "id": "waterStone"
+  },
+  "thunderStone": {
+    "id": "thunderStone"
+  },
+  "sunStone": {
+    "id": "sunStone"
+  },
+  "linkStone": {
+    "id": "linkStone"
+  },
+  "ovalStone": {
+    "id": "ovalStone"
+  },
+  "moonStone": {
+    "id": "moonStone"
+  },
+  "leafStone": {
+    "id": "leafStone"
+  },
+  "iceStone": {
+    "id": "iceStone"
+  },
+  "fireStone": {
+    "id": "fireStone"
+  },
+  "duskStone": {
+    "id": "duskStone"
+  },
+  "dawnStone": {
+    "id": "dawnStone"
+  },
+  "shinyStone": {
+    "id": "shinyStone"
+  },
+  "oddRock": {
+    "id": "oddRock"
+  },
+  "everstone": {
+    "id": "everstone",
+    "type": "key"
+  },
+  "powerAnklet": {
+    "id": "powerAnklet",
+    "type": "key"
+  },
+  "powerBand": {
+    "id": "powerBand",
+    "type": "key"
+  },
+  "powerBelt": {
+    "id": "powerBelt",
+    "type": "key"
+  },
+  "powerBracer": {
+    "id": "powerBracer",
+    "type": "key"
+  },
+  "powerLens": {
+    "id": "powerLens",
+    "type": "key"
+  },
+  "powerWeight": {
+    "id": "powerWeight",
+    "type": "key"
+  },
+  "machoBrace": {
+    "id": "machoBrace",
+    "type": "key"
+  },
+  "lockCapsule": {
+    "id": "lockCapsule",
+    "type": "key"
+  },
+  "destinyKnot": {
+    "id": "destinyKnot",
+    "type": "key"
+  },
+  "abomasite": {
+    "id": "abomasite"
+  },
+  "absolite": {
+    "id": "absolite"
+  },
+  "aerodactylite": {
+    "id": "aerodactylite"
+  },
+  "aggronite": {
+    "id": "aggronite"
+  },
+  "alakazite": {
+    "id": "alakazite"
+  },
+  "altarianite": {
+    "id": "altarianite"
+  },
+  "ampharosite": {
+    "id": "ampharosite"
+  },
+  "audinite": {
+    "id": "audinite"
+  },
+  "banettite": {
+    "id": "banettite"
+  },
+  "barbaracite": {
+    "id": "barbaracite"
+  },
+  "baxcaliburite": {
+    "id": "baxcaliburite"
+  },
+  "beedrillite": {
+    "id": "beedrillite"
+  },
+  "blastoisinite": {
+    "id": "blastoisinite"
+  },
+  "blazikenite": {
+    "id": "blazikenite"
+  },
+  "cameruptite": {
+    "id": "cameruptite"
+  },
+  "charizarditeX": {
+    "id": "charizarditeX"
+  },
+  "charizarditeY": {
+    "id": "charizarditeY"
+  },
+  "diancite": {
+    "id": "diancite"
+  },
+  "dragonitite": {
+    "id": "dragonitite"
+  },
+  "falinksite": {
+    "id": "falinksite"
+  },
+  "galladite": {
+    "id": "galladite"
+  },
+  "garchompite": {
+    "id": "garchompite"
+  },
+  "glalitite": {
+    "id": "glalitite"
+  },
+  "gardevoirite": {
+    "id": "gardevoirite"
+  },
+  "gengarite": {
+    "id": "gengarite"
+  },
+  "gyaradosite": {
+    "id": "gyaradosite"
+  },
+  "heracronite": {
+    "id": "heracronite"
+  },
+  "houndoominite": {
+    "id": "houndoominite"
+  },
+  "hawluchanite": {
+    "id": "hawluchanite"
+  },
+  "kangaskhanite": {
+    "id": "kangaskhanite"
+  },
+  "lopunnite": {
+    "id": "lopunnite"
+  },
+  "lucarionite": {
+    "id": "lucarionite"
+  },
+  "manectite": {
+    "id": "manectite"
+  },
+  "mawilite": {
+    "id": "mawilite"
+  },
+  "medichamite": {
+    "id": "medichamite"
+  },
+  "metagrossite": {
+    "id": "metagrossite"
+  },
+  "mewtwoniteX": {
+    "id": "mewtwoniteX"
+  },
+  "mewtwoniteY": {
+    "id": "mewtwoniteY"
+  },
+  "pidgeotite": {
+    "id": "pidgeotite"
+  },
+  "pyroarite": {
+    "id": "pyroarite"
+  },
+  "pinsirite": {
+    "id": "pinsirite"
+  },
+  "raichutiteX": {
+    "id": "raichutiteX"
+  },
+  "raichutiteY": {
+    "id": "raichutiteY"
+  },
+  "sablenite": {
+    "id": "sablenite"
+  },
+  "salamencite": {
+    "id": "salamencite"
+  },
+  "sceptilite": {
+    "id": "sceptilite"
+  },
+  "scizorite": {
+    "id": "scizorite"
+  },
+  "sharpedonite": {
+    "id": "sharpedonite"
+  },
+  "slowbronite": {
+    "id": "slowbronite"
+  },
+  "steelixite": {
+    "id": "steelixite"
+  },
+  "swampertite": {
+    "id": "swampertite"
+  },
+  "tyranitarite": {
+    "id": "tyranitarite"
+  },
+  "venusaurite": {
+    "id": "venusaurite"
+  },
+  "magazineSubscription": {
+    "id": "magazineSubscription",
+    "type": "key"
+  },
+  "battlePass": {
+    "id": "battlePass",
+    "type": "key"
+  },
+  "replicatorUpgradeS": {
+    "id": "replicatorUpgradeS",
+    "type": "key"
+  },
+  "replicatorUpgradeE": {
+    "id": "replicatorUpgradeE",
+    "type": "key"
+  },
+  "mysteryEgg": {
+    "id": "mysteryEgg"
+  },
+  "tmDummy": {
+    "id": "tmDummy"
+  },
+  "nothing": {
+    "id": "nothing"
+  },
+  "buginiumZ": {
+    "id": "buginiumZ",
+    "type": "held"
+  },
+  "darkiniumZ": {
+    "id": "darkiniumZ",
+    "type": "held"
+  },
+  "dragoniumZ": {
+    "id": "dragoniumZ",
+    "type": "held"
+  },
+  "electriumZ": {
+    "id": "electriumZ",
+    "type": "held"
+  },
+  "fairiumZ": {
+    "id": "fairiumZ",
+    "type": "held"
+  },
+  "fightiniumZ": {
+    "id": "fightiniumZ",
+    "type": "held"
+  },
+  "firiumZ": {
+    "id": "firiumZ",
+    "type": "held"
+  },
+  "flyiniumZ": {
+    "id": "flyiniumZ",
+    "type": "held"
+  },
+  "ghostiumZ": {
+    "id": "ghostiumZ",
+    "type": "held"
+  },
+  "grassiumZ": {
+    "id": "grassiumZ",
+    "type": "held"
+  },
+  "groundiumZ": {
+    "id": "groundiumZ",
+    "type": "held"
+  },
+  "iciumZ": {
+    "id": "iciumZ",
+    "type": "held"
+  },
+  "normaliumZ": {
+    "id": "normaliumZ",
+    "type": "held"
+  },
+  "poisoniumZ": {
+    "id": "poisoniumZ",
+    "type": "held"
+  },
+  "psychiumZ": {
+    "id": "psychiumZ",
+    "type": "held"
+  },
+  "rockiumZ": {
+    "id": "rockiumZ",
+    "type": "held"
+  },
+  "steeliumZ": {
+    "id": "steeliumZ",
+    "type": "held"
+  },
+  "wateriumZ": {
+    "id": "wateriumZ",
+    "type": "held"
+  },
+  "quickAttackTm": {
+    "id": "quickAttackTm",
+    "type": "decor"
+  }
+}
