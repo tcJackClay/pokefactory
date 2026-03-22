@@ -1,116 +1,214 @@
 extends Control
 
-const NAV_ITEMS := [
-	{
-		"id": "home",
-		"label": "首页",
-		"title": "首页",
-		"body": "当前显示首页概览。后续可以在这里接入主玩法、任务流或运营活动入口。",
-		"features": ["素材总览", "项目状态提示", "快捷入口预留"]
+const BACKGROUND_TEXTURE := "res://assets/bg/main-bg.png"
+const HERO_TEXTURE := "res://assets/bg/gymCard.png"
+const POKEBALL_ICON := "res://assets/icons/pokeball.svg"
+
+const NAV_COPY := {
+	"pokemon": {
+		"title": "当前宝可梦",
+		"description": "查看当前工厂租借阵容、属性覆盖和招式节奏，快速决定下一场轮换对象。"
 	},
-	{
-		"id": "collection",
-		"label": "图鉴",
-		"title": "图鉴 / 素材库",
-		"body": "用于承接宝可梦图鉴、角色插图、道具插画等内容浏览能力，适合做列表 + 详情的移动端体验。",
-		"features": ["图片资源复用", "搜索筛选位", "详情页容器"]
+	"dex": {
+		"title": "图鉴",
+		"description": "检索可用宝可梦、属性克制与推荐招式，提前规划工厂高连胜路线。"
 	},
-	{
-		"id": "adventure",
-		"label": "探索",
-		"title": "探索 / 玩法",
-		"body": "预留关卡、地图、剧情推进与战斗流入口，后续可以按你的安排继续细化具体玩法。",
-		"features": ["玩法入口卡片", "流程状态机预留", "触屏操作区"]
+	"factory": {
+		"title": "对战工厂",
+		"description": "主玩法入口：开始挑战、挑选租借队伍，并在连战中不断优化你的策略。"
 	},
-	{
-		"id": "settings",
-		"label": "设置",
-		"title": "设置 / 开发面板",
-		"body": "用于放置音量、性能、账号、本地缓存以及开发期调试开关，方便后续持续扩展。",
-		"features": ["系统设置", "资源版本信息", "调试入口预留"]
+	"train": {
+		"title": "训练",
+		"description": "进入训练模块，测试配招、模拟属性对局，调整你的工厂战术储备。"
+	},
+	"settings": {
+		"title": "设置",
+		"description": "管理音效、震动、显示表现和账号信息，切换更适合移动端的游玩体验。"
 	}
-]
+}
 
-const TRAINER_PREVIEW := "res://assets/trainers/cynthia.png"
-const FEATURE_CARD_SCRIPT := preload("res://app/scripts/FeatureCard.gd")
+@onready var background: TextureRect = $Background
+@onready var hero_art: TextureRect = $SafeArea/Root/Content/HeroCard/HeroPadding/HeroContent/HeroHeader/HeroArt
+@onready var hero_description: Label = $SafeArea/Root/Content/HeroCard/HeroPadding/HeroContent/HeroHeader/HeroText/HeroDescription
+@onready var stat_a_value: Label = $SafeArea/Root/Content/HeroCard/HeroPadding/HeroContent/QuickStats/StatA/StatAPadding/StatABody/StatAValue
+@onready var stat_b_value: Label = $SafeArea/Root/Content/HeroCard/HeroPadding/HeroContent/QuickStats/StatB/StatBPadding/StatBBody/StatBValue
+@onready var hero_title: Label = $SafeArea/Root/Content/HeroCard/HeroPadding/HeroContent/HeroHeader/HeroText/HeroTitle
+@onready var tip_text: Label = $SafeArea/Root/Content/TipCard/TipPadding/TipText
+@onready var player_name: Label = $SafeArea/Root/TopBar/TopBarPadding/TopBarRow/TrainerInfo/PlayerName
+@onready var status_label: Label = $SafeArea/Root/TopBar/TopBarPadding/TopBarRow/TrainerInfo/StatusLabel
+@onready var rank_chip: Label = $SafeArea/Root/TopBar/TopBarPadding/TopBarRow/ResourceInfo/RankChip
+@onready var ticket_chip: Label = $SafeArea/Root/TopBar/TopBarPadding/TopBarRow/ResourceInfo/TicketChip
 
-@onready var trainer_texture: TextureRect = $SafeArea/Root/HeaderCard/HeaderPadding/HeaderContent/HeroRow/TrainerTexture
-@onready var pokemon_stat_value: Label = $SafeArea/Root/StatsGrid/PokemonStat/PokemonStatPadding/PokemonStatBody/PokemonStatValue
-@onready var item_stat_value: Label = $SafeArea/Root/StatsGrid/ItemStat/ItemStatPadding/ItemStatBody/ItemStatValue
-@onready var hero_body: Label = $SafeArea/Root/HeaderCard/HeaderPadding/HeaderContent/HeroRow/HeroSummary/HeroBody
-@onready var screen_title: Label = $SafeArea/Root/MainPanel/MainPadding/MainContent/ScreenTitle
-@onready var screen_body: Label = $SafeArea/Root/MainPanel/MainPadding/MainContent/ScreenBody
-@onready var feature_list: VBoxContainer = $SafeArea/Root/MainPanel/MainPadding/MainContent/FeatureList
-@onready var nav_buttons: HBoxContainer = $SafeArea/Root/BottomNav/BottomNavPadding/NavButtons
+@onready var pokemon_button: Button = $SafeArea/Root/BottomDock/BottomDockPadding/NavRow/PokemonButton
+@onready var dex_button: Button = $SafeArea/Root/BottomDock/BottomDockPadding/NavRow/DexButton
+@onready var factory_button: Button = $SafeArea/Root/BottomDock/BottomDockPadding/NavRow/FactoryButtonWrap/FactoryButton
+@onready var train_button: Button = $SafeArea/Root/BottomDock/BottomDockPadding/NavRow/TrainButton
+@onready var settings_button: Button = $SafeArea/Root/BottomDock/BottomDockPadding/NavRow/SettingsButton
 
-var selected_tab := "home"
+var selected_tab := "factory"
 
 func _ready() -> void:
 	_apply_mobile_theme()
+	_apply_art()
+	_apply_styles()
 	_load_summary_data()
-	_load_preview_image()
-	_build_navigation()
-	_show_screen(selected_tab)
+	_connect_buttons()
+	_select_tab(selected_tab)
 
 func _apply_mobile_theme() -> void:
 	var root := get_window()
 	if root:
-		root.min_size = Vector2i(360, 740)
+		root.min_size = Vector2i(360, 760)
+
+func _apply_art() -> void:
+	if ResourceLoader.exists(BACKGROUND_TEXTURE):
+		background.texture = load(BACKGROUND_TEXTURE)
+	if ResourceLoader.exists(HERO_TEXTURE):
+		hero_art.texture = load(HERO_TEXTURE)
+
+func _apply_styles() -> void:
+	var title_settings := LabelSettings.new()
+	title_settings.font_size = 34
+	title_settings.outline_size = 8
+	title_settings.font_color = Color("#f6fbff")
+	title_settings.outline_color = Color(0.02, 0.05, 0.12, 0.6)
+	$SafeArea/Root/Content/HeroCard/HeroPadding/HeroContent/HeroHeader/HeroText/HeroTitle.label_settings = title_settings
+
+	var eyebrow_settings := LabelSettings.new()
+	eyebrow_settings.font_size = 14
+	eyebrow_settings.font_color = Color("#ffd166")
+	$SafeArea/Root/Content/HeroCard/HeroPadding/HeroContent/HeroHeader/HeroText/HeroEyebrow.label_settings = eyebrow_settings
+
+	var stat_value_settings := LabelSettings.new()
+	stat_value_settings.font_size = 24
+	stat_value_settings.font_color = Color("#fefefe")
+	stat_a_value.label_settings = stat_value_settings
+	stat_b_value.label_settings = stat_value_settings
+	$SafeArea/Root/Content/HeroCard/HeroPadding/HeroContent/QuickStats/StatC/StatCPadding/StatCBody/StatCValue.label_settings = stat_value_settings
+
+	var panel_style := StyleBoxFlat.new()
+	panel_style.bg_color = Color(0.07, 0.11, 0.2, 0.76)
+	panel_style.corner_radius_top_left = 28
+	panel_style.corner_radius_top_right = 28
+	panel_style.corner_radius_bottom_right = 28
+	panel_style.corner_radius_bottom_left = 28
+	panel_style.border_width_left = 2
+	panel_style.border_width_top = 2
+	panel_style.border_width_right = 2
+	panel_style.border_width_bottom = 2
+	panel_style.border_color = Color(1, 1, 1, 0.12)
+	panel_style.shadow_size = 18
+	panel_style.shadow_color = Color(0, 0, 0, 0.28)
+	$SafeArea/Root/Content/HeroCard.add_theme_stylebox_override("panel", panel_style)
+	$SafeArea/Root/TopBar.add_theme_stylebox_override("panel", panel_style)
+	$SafeArea/Root/BottomDock.add_theme_stylebox_override("panel", panel_style)
+
+	var tip_style := StyleBoxFlat.new()
+	tip_style.bg_color = Color(0.98, 0.84, 0.36, 0.14)
+	tip_style.corner_radius_top_left = 22
+	tip_style.corner_radius_top_right = 22
+	tip_style.corner_radius_bottom_right = 22
+	tip_style.corner_radius_bottom_left = 22
+	tip_style.border_width_left = 1
+	tip_style.border_width_top = 1
+	tip_style.border_width_right = 1
+	tip_style.border_width_bottom = 1
+	tip_style.border_color = Color(0.98, 0.84, 0.36, 0.35)
+	$SafeArea/Root/Content/TipCard.add_theme_stylebox_override("panel", tip_style)
+
+	for stat_panel in [
+		$SafeArea/Root/Content/HeroCard/HeroPadding/HeroContent/QuickStats/StatA,
+		$SafeArea/Root/Content/HeroCard/HeroPadding/HeroContent/QuickStats/StatB,
+		$SafeArea/Root/Content/HeroCard/HeroPadding/HeroContent/QuickStats/StatC
+	]:
+		var stat_style := StyleBoxFlat.new()
+		stat_style.bg_color = Color(1, 1, 1, 0.08)
+		stat_style.corner_radius_top_left = 20
+		stat_style.corner_radius_top_right = 20
+		stat_style.corner_radius_bottom_right = 20
+		stat_style.corner_radius_bottom_left = 20
+		stat_panel.add_theme_stylebox_override("panel", stat_style)
+
+	_apply_chip_style(rank_chip, Color("#ff6b6b"))
+	_apply_chip_style(ticket_chip, Color("#4cc9f0"))
+	_apply_button_styles()
+	_apply_pokeball_icon()
+
+func _apply_chip_style(label: Label, accent: Color) -> void:
+	label.add_theme_color_override("font_color", accent.lightened(0.25))
+	label.add_theme_font_size_override("font_size", 15)
+
+func _apply_button_styles() -> void:
+	for button in [pokemon_button, dex_button, train_button, settings_button]:
+		var normal := StyleBoxFlat.new()
+		normal.bg_color = Color(1, 1, 1, 0.08)
+		normal.corner_radius_top_left = 24
+		normal.corner_radius_top_right = 24
+		normal.corner_radius_bottom_right = 24
+		normal.corner_radius_bottom_left = 24
+		normal.content_margin_left = 10
+		normal.content_margin_right = 10
+		button.add_theme_stylebox_override("normal", normal)
+		var pressed := normal.duplicate()
+		pressed.bg_color = Color("#2a9d8f")
+		button.add_theme_stylebox_override("pressed", pressed)
+		button.add_theme_stylebox_override("hover", pressed)
+		button.add_theme_font_size_override("font_size", 17)
+
+	var primary := StyleBoxFlat.new()
+	primary.bg_color = Color("#ef233c")
+	primary.corner_radius_top_left = 54
+	primary.corner_radius_top_right = 54
+	primary.corner_radius_bottom_right = 54
+	primary.corner_radius_bottom_left = 54
+	primary.shadow_size = 22
+	primary.shadow_color = Color(0, 0, 0, 0.25)
+	primary.border_width_left = 6
+	primary.border_width_top = 6
+	primary.border_width_right = 6
+	primary.border_width_bottom = 6
+	primary.border_color = Color.WHITE
+	factory_button.add_theme_stylebox_override("normal", primary)
+	var primary_hover := primary.duplicate()
+	primary_hover.bg_color = Color("#f94144")
+	factory_button.add_theme_stylebox_override("hover", primary_hover)
+	factory_button.add_theme_stylebox_override("pressed", primary_hover)
+	factory_button.add_theme_font_size_override("font_size", 20)
+
+func _apply_pokeball_icon() -> void:
+	if ResourceLoader.exists(POKEBALL_ICON):
+		factory_button.icon = load(POKEBALL_ICON)
+		factory_button.expand_icon = true
 
 func _load_summary_data() -> void:
 	var pokemon_data := _load_json("res://data/pokemon.json")
 	var item_data := _load_json("res://data/items.json")
-	pokemon_stat_value.text = str(pokemon_data.size())
-	item_stat_value.text = str(item_data.size())
-	hero_body.text = "已保留 %s 个宝可梦文本条目与 %s 个道具文本条目，原始图片素材目录也继续沿用。" % [pokemon_data.size(), item_data.size()]
+	stat_a_value.text = str(pokemon_data.size())
+	stat_b_value.text = str(item_data.size())
+	player_name.text = "Factory Master"
+	status_label.text = "霓虹都市 · 数据已同步 %s 项" % pokemon_data.size()
+	tip_text.text = "今日工厂词条：可租借 %s 只宝可梦、%s 种战术道具，建议优先围绕高速控场构筑。" % [pokemon_data.size(), item_data.size()]
 
-func _load_preview_image() -> void:
-	if ResourceLoader.exists(TRAINER_PREVIEW):
-		trainer_texture.texture = load(TRAINER_PREVIEW)
+func _connect_buttons() -> void:
+	pokemon_button.pressed.connect(_select_tab.bind("pokemon"))
+	dex_button.pressed.connect(_select_tab.bind("dex"))
+	factory_button.pressed.connect(_select_tab.bind("factory"))
+	train_button.pressed.connect(_select_tab.bind("train"))
+	settings_button.pressed.connect(_select_tab.bind("settings"))
 
-func _build_navigation() -> void:
-	for child in nav_buttons.get_children():
-		child.queue_free()
-
-	for item in NAV_ITEMS:
-		var button := Button.new()
-		button.text = item.label
-		button.custom_minimum_size = Vector2(0, 56)
-		button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		button.pressed.connect(_on_nav_pressed.bind(item.id))
-		nav_buttons.add_child(button)
-
-func _show_screen(tab_id: String) -> void:
+func _select_tab(tab_id: String) -> void:
 	selected_tab = tab_id
-	var tab := _get_tab(tab_id)
-	screen_title.text = tab.title
-	screen_body.text = tab.body
-	_clear_feature_cards()
-	for feature in tab.features:
-		var card := PanelContainer.new()
-		card.set_script(FEATURE_CARD_SCRIPT)
-		feature_list.add_child(card)
-		card.call("setup", feature)
-	_update_nav_state()
+	var copy: Dictionary = NAV_COPY.get(tab_id, NAV_COPY["factory"])
+	hero_title.text = copy.title
+	hero_description.text = copy.description
+	_update_button_state()
 
-func _clear_feature_cards() -> void:
-	for child in feature_list.get_children():
-		child.queue_free()
-
-func _update_nav_state() -> void:
-	for index in range(nav_buttons.get_child_count()):
-		var button := nav_buttons.get_child(index) as Button
-		var item: Dictionary = NAV_ITEMS[index]
-		button.disabled = item.id == selected_tab
-
-func _on_nav_pressed(tab_id: String) -> void:
-	_show_screen(tab_id)
-
-func _get_tab(tab_id: String) -> Dictionary:
-	for item in NAV_ITEMS:
-		if item.id == tab_id:
-			return item
-	return NAV_ITEMS[0]
+func _update_button_state() -> void:
+	pokemon_button.disabled = selected_tab == "pokemon"
+	dex_button.disabled = selected_tab == "dex"
+	factory_button.disabled = selected_tab == "factory"
+	train_button.disabled = selected_tab == "train"
+	settings_button.disabled = selected_tab == "settings"
 
 func _load_json(path: String) -> Dictionary:
 	if not FileAccess.file_exists(path):
