@@ -16,27 +16,26 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 24.0
-offset_top = 24.0
-offset_right = -24.0
-offset_bottom = -24.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Root" type="VBoxContainer" parent="SafeArea"]
 layout_mode = 2
-theme_override_constants/separation = 18
+theme_override_constants/separation = 14
 
 [node name="HeaderCard" type="PanelContainer" parent="SafeArea/Root"]
 layout_mode = 2
-size_flags_vertical = 3
 
 [node name="HeaderPadding" type="MarginContainer" parent="SafeArea/Root/HeaderCard"]
 layout_mode = 2
-theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 20
-theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 20
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 18
 
 [node name="HeaderContent" type="VBoxContainer" parent="SafeArea/Root/HeaderCard/HeaderPadding"]
 layout_mode = 2
@@ -44,7 +43,7 @@ theme_override_constants/separation = 12
 
 [node name="Eyebrow" type="Label" parent="SafeArea/Root/HeaderCard/HeaderPadding/HeaderContent"]
 layout_mode = 2
-text = "Mobile-first framework"
+text = "Mobile battle factory prototype"
 
 [node name="Title" type="Label" parent="SafeArea/Root/HeaderCard/HeaderPadding/HeaderContent"]
 layout_mode = 2
@@ -52,16 +51,16 @@ text = "PokeFactory Mobile"
 
 [node name="Description" type="Label" parent="SafeArea/Root/HeaderCard/HeaderPadding/HeaderContent"]
 layout_mode = 2
-text = "保留现有图片和文本素材，先搭建一个适合手机纵向屏幕的 Godot 项目框架，方便后续继续迭代。"
+text = "参考 PokeChill 的手机信息层级，把保留完整宝可梦系统的对战工厂玩法重新整理到纵屏 UI 中。"
 autowrap_mode = 3
 
 [node name="HeroRow" type="HBoxContainer" parent="SafeArea/Root/HeaderCard/HeaderPadding/HeaderContent"]
 layout_mode = 2
-theme_override_constants/separation = 16
+theme_override_constants/separation = 12
 alignment = 1
 
 [node name="TrainerTexture" type="TextureRect" parent="SafeArea/Root/HeaderCard/HeaderPadding/HeaderContent/HeroRow"]
-custom_minimum_size = Vector2(128, 128)
+custom_minimum_size = Vector2(112, 112)
 layout_mode = 2
 stretch_mode = 5
 expand_mode = 1
@@ -73,18 +72,18 @@ theme_override_constants/separation = 8
 
 [node name="HeroName" type="Label" parent="SafeArea/Root/HeaderCard/HeaderPadding/HeaderContent/HeroRow/HeroSummary"]
 layout_mode = 2
-text = "素材预览"
+text = "玩法定位"
 
 [node name="HeroBody" type="Label" parent="SafeArea/Root/HeaderCard/HeaderPadding/HeaderContent/HeroRow/HeroSummary"]
 layout_mode = 2
-text = "这里会优先展示原项目图片素材，并在首页提示当前数据资源规模。"
+text = "这里展示当前版本对战工厂方案的关键定位。"
 autowrap_mode = 3
 
 [node name="StatsGrid" type="GridContainer" parent="SafeArea/Root"]
 layout_mode = 2
 columns = 2
-theme_override_constants/h_separation = 16
-theme_override_constants/v_separation = 16
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 12
 
 [node name="PokemonStat" type="PanelContainer" parent="SafeArea/Root/StatsGrid"]
 layout_mode = 2
@@ -92,19 +91,41 @@ size_flags_horizontal = 3
 
 [node name="PokemonStatPadding" type="MarginContainer" parent="SafeArea/Root/StatsGrid/PokemonStat"]
 layout_mode = 2
-theme_override_constants/margin_left = 16
-theme_override_constants/margin_top = 16
-theme_override_constants/margin_right = 16
-theme_override_constants/margin_bottom = 16
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 14
 
 [node name="PokemonStatBody" type="VBoxContainer" parent="SafeArea/Root/StatsGrid/PokemonStat/PokemonStatPadding"]
 layout_mode = 2
 
 [node name="PokemonStatLabel" type="Label" parent="SafeArea/Root/StatsGrid/PokemonStat/PokemonStatPadding/PokemonStatBody"]
 layout_mode = 2
-text = "Pokémon 数据"
+text = "宝可梦"
 
 [node name="PokemonStatValue" type="Label" parent="SafeArea/Root/StatsGrid/PokemonStat/PokemonStatPadding/PokemonStatBody"]
+layout_mode = 2
+text = "0"
+
+[node name="MoveStat" type="PanelContainer" parent="SafeArea/Root/StatsGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MoveStatPadding" type="MarginContainer" parent="SafeArea/Root/StatsGrid/MoveStat"]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 14
+
+[node name="MoveStatBody" type="VBoxContainer" parent="SafeArea/Root/StatsGrid/MoveStat/MoveStatPadding"]
+layout_mode = 2
+
+[node name="MoveStatLabel" type="Label" parent="SafeArea/Root/StatsGrid/MoveStat/MoveStatPadding/MoveStatBody"]
+layout_mode = 2
+text = "招式"
+
+[node name="MoveStatValue" type="Label" parent="SafeArea/Root/StatsGrid/MoveStat/MoveStatPadding/MoveStatBody"]
 layout_mode = 2
 text = "0"
 
@@ -114,21 +135,165 @@ size_flags_horizontal = 3
 
 [node name="ItemStatPadding" type="MarginContainer" parent="SafeArea/Root/StatsGrid/ItemStat"]
 layout_mode = 2
-theme_override_constants/margin_left = 16
-theme_override_constants/margin_top = 16
-theme_override_constants/margin_right = 16
-theme_override_constants/margin_bottom = 16
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 14
 
 [node name="ItemStatBody" type="VBoxContainer" parent="SafeArea/Root/StatsGrid/ItemStat/ItemStatPadding"]
 layout_mode = 2
 
 [node name="ItemStatLabel" type="Label" parent="SafeArea/Root/StatsGrid/ItemStat/ItemStatPadding/ItemStatBody"]
 layout_mode = 2
-text = "道具数据"
+text = "道具"
 
 [node name="ItemStatValue" type="Label" parent="SafeArea/Root/StatsGrid/ItemStat/ItemStatPadding/ItemStatBody"]
 layout_mode = 2
 text = "0"
+
+[node name="TypeStat" type="PanelContainer" parent="SafeArea/Root/StatsGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TypeStatPadding" type="MarginContainer" parent="SafeArea/Root/StatsGrid/TypeStat"]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 14
+
+[node name="TypeStatBody" type="VBoxContainer" parent="SafeArea/Root/StatsGrid/TypeStat/TypeStatPadding"]
+layout_mode = 2
+
+[node name="TypeStatLabel" type="Label" parent="SafeArea/Root/StatsGrid/TypeStat/TypeStatPadding/TypeStatBody"]
+layout_mode = 2
+text = "属性"
+
+[node name="TypeStatValue" type="Label" parent="SafeArea/Root/StatsGrid/TypeStat/TypeStatPadding/TypeStatBody"]
+layout_mode = 2
+text = "0"
+
+[node name="RunOverview" type="PanelContainer" parent="SafeArea/Root"]
+layout_mode = 2
+
+[node name="RunPadding" type="MarginContainer" parent="SafeArea/Root/RunOverview"]
+layout_mode = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 18
+
+[node name="RunContent" type="VBoxContainer" parent="SafeArea/Root/RunOverview/RunPadding"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="RunTitle" type="Label" parent="SafeArea/Root/RunOverview/RunPadding/RunContent"]
+layout_mode = 2
+text = "本局预览"
+
+[node name="RunRow" type="HBoxContainer" parent="SafeArea/Root/RunOverview/RunPadding/RunContent"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="RunCard" type="PanelContainer" parent="SafeArea/Root/RunOverview/RunPadding/RunContent/RunRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RunCardPadding" type="MarginContainer" parent="SafeArea/Root/RunOverview/RunPadding/RunContent/RunRow/RunCard"]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 14
+
+[node name="RunCardBody" type="VBoxContainer" parent="SafeArea/Root/RunOverview/RunPadding/RunContent/RunRow/RunCard/RunCardPadding"]
+layout_mode = 2
+
+[node name="RunLabel" type="Label" parent="SafeArea/Root/RunOverview/RunPadding/RunContent/RunRow/RunCard/RunCardPadding/RunCardBody"]
+layout_mode = 2
+text = "连胜目标"
+
+[node name="RunValue" type="Label" parent="SafeArea/Root/RunOverview/RunPadding/RunContent/RunRow/RunCard/RunCardPadding/RunCardBody"]
+layout_mode = 2
+text = "0 / 50"
+
+[node name="StageCard" type="PanelContainer" parent="SafeArea/Root/RunOverview/RunPadding/RunContent/RunRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="StageCardPadding" type="MarginContainer" parent="SafeArea/Root/RunOverview/RunPadding/RunContent/RunRow/StageCard"]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 14
+
+[node name="StageCardBody" type="VBoxContainer" parent="SafeArea/Root/RunOverview/RunPadding/RunContent/RunRow/StageCard/StageCardPadding"]
+layout_mode = 2
+
+[node name="StageLabel" type="Label" parent="SafeArea/Root/RunOverview/RunPadding/RunContent/RunRow/StageCard/StageCardPadding/StageCardBody"]
+layout_mode = 2
+text = "当前阶段"
+
+[node name="StageValue" type="Label" parent="SafeArea/Root/RunOverview/RunPadding/RunContent/RunRow/StageCard/StageCardPadding/StageCardBody"]
+layout_mode = 2
+text = "第 1 战"
+
+[node name="RunStarter" type="Label" parent="SafeArea/Root/RunOverview/RunPadding/RunContent"]
+layout_mode = 2
+text = "初始宝可梦：-"
+autowrap_mode = 3
+
+[node name="RunOpponent" type="Label" parent="SafeArea/Root/RunOverview/RunPadding/RunContent"]
+layout_mode = 2
+text = "下个对手：-"
+autowrap_mode = 3
+
+[node name="TeamPanel" type="PanelContainer" parent="SafeArea/Root"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TeamPadding" type="MarginContainer" parent="SafeArea/Root/TeamPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 18
+
+[node name="TeamContent" type="VBoxContainer" parent="SafeArea/Root/TeamPanel/TeamPadding"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="TeamTitle" type="Label" parent="SafeArea/Root/TeamPanel/TeamPadding/TeamContent"]
+layout_mode = 2
+text = "当前 3 人小队"
+
+[node name="TeamList" type="VBoxContainer" parent="SafeArea/Root/TeamPanel/TeamPadding/TeamContent"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="RecruitPanel" type="PanelContainer" parent="SafeArea/Root"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="RecruitPadding" type="MarginContainer" parent="SafeArea/Root/RecruitPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 18
+
+[node name="RecruitContent" type="VBoxContainer" parent="SafeArea/Root/RecruitPanel/RecruitPadding"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="RecruitTitle" type="Label" parent="SafeArea/Root/RecruitPanel/RecruitPadding/RecruitContent"]
+layout_mode = 2
+text = "战后随机 3 选 1"
+
+[node name="RecruitList" type="VBoxContainer" parent="SafeArea/Root/RecruitPanel/RecruitPadding/RecruitContent"]
+layout_mode = 2
+theme_override_constants/separation = 10
 
 [node name="MainPanel" type="PanelContainer" parent="SafeArea/Root"]
 layout_mode = 2
@@ -144,25 +309,25 @@ theme_override_constants/margin_bottom = 18
 [node name="MainContent" type="VBoxContainer" parent="SafeArea/Root/MainPanel/MainPadding"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_constants/separation = 14
+theme_override_constants/separation = 12
 
 [node name="SectionTitle" type="Label" parent="SafeArea/Root/MainPanel/MainPadding/MainContent"]
 layout_mode = 2
-text = "框架分区"
+text = "方案拆解"
 
 [node name="SectionDescription" type="Label" parent="SafeArea/Root/MainPanel/MainPadding/MainContent"]
 layout_mode = 2
-text = "先把常用入口、数据检查和后续待接入模块的位置预留出来。"
+text = "围绕你的需求，把手机端工厂模式的关键模块拆成可继续开发的页面。"
 autowrap_mode = 3
 
 [node name="ScreenTitle" type="Label" parent="SafeArea/Root/MainPanel/MainPadding/MainContent"]
 layout_mode = 2
-text = "首页"
+text = "-"
 
 [node name="ScreenBody" type="Label" parent="SafeArea/Root/MainPanel/MainPadding/MainContent"]
 layout_mode = 2
 size_flags_vertical = 3
-text = "当前显示首页概览。后续可以在这里接入主玩法、任务流或运营活动入口。"
+text = "-"
 autowrap_mode = 3
 
 [node name="FeatureList" type="VBoxContainer" parent="SafeArea/Root/MainPanel/MainPadding/MainContent"]
@@ -174,12 +339,12 @@ layout_mode = 2
 
 [node name="BottomNavPadding" type="MarginContainer" parent="SafeArea/Root/BottomNav"]
 layout_mode = 2
-theme_override_constants/margin_left = 12
-theme_override_constants/margin_top = 12
-theme_override_constants/margin_right = 12
-theme_override_constants/margin_bottom = 12
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
 
 [node name="NavButtons" type="HBoxContainer" parent="SafeArea/Root/BottomNav/BottomNavPadding"]
 layout_mode = 2
-theme_override_constants/separation = 10
+theme_override_constants/separation = 8
 alignment = 1
