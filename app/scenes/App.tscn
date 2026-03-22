@@ -207,6 +207,105 @@ text = "当前队伍"
 layout_mode = 2
 text = "03 / 03"
 
+
+[node name="FlowPanel" type="PanelContainer" parent="SafeArea/Root/Content"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="FlowPadding" type="MarginContainer" parent="SafeArea/Root/Content/FlowPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 18
+
+[node name="FlowContent" type="VBoxContainer" parent="SafeArea/Root/Content/FlowPanel/FlowPadding"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="FlowHeader" type="HBoxContainer" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="FlowTitleBox" type="VBoxContainer" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/FlowHeader"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+theme_override_constants/separation = 6
+
+[node name="FlowTitle" type="Label" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/FlowHeader/FlowTitleBox"]
+layout_mode = 2
+text = "对战工厂流程待机"
+
+[node name="FlowStep" type="Label" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/FlowHeader/FlowTitleBox"]
+layout_mode = 2
+text = "STEP 0"
+
+[node name="FlowBody" type="Label" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent"]
+layout_mode = 2
+text = "点击中心按钮后，会在这里显示对战工厂流程。"
+autowrap_mode = 3
+
+[node name="OptionBar" type="HBoxContainer" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent"]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="SelectionGrid" type="GridContainer" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent"]
+layout_mode = 2
+columns = 3
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+
+[node name="ActionRow" type="HBoxContainer" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="ContinueButton" type="Button" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/ActionRow"]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "确认选择"
+
+[node name="ResetButton" type="Button" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/ActionRow"]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "放弃并重新开始"
+
+[node name="TeamPanel" type="PanelContainer" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent"]
+layout_mode = 2
+size_flags_horizontal = 8
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="TeamPadding" type="MarginContainer" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/TeamPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="TeamContent" type="VBoxContainer" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/TeamPanel/TeamPadding"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="TeamHeader" type="HBoxContainer" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/TeamPanel/TeamPadding/TeamContent"]
+layout_mode = 2
+
+[node name="TeamLabel" type="Label" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/TeamPanel/TeamPadding/TeamContent/TeamHeader"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "右下角队伍"
+
+[node name="TeamStatus" type="Label" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/TeamPanel/TeamPadding/TeamContent/TeamHeader"]
+layout_mode = 2
+text = "当前队伍：1 只 / 最终目标 3 只"
+
+[node name="TeamIcons" type="HBoxContainer" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/TeamPanel/TeamPadding/TeamContent"]
+layout_mode = 2
+alignment = 2
+theme_override_constants/separation = 10
+
 [node name="TipCard" type="PanelContainer" parent="SafeArea/Root/Content"]
 layout_mode = 2
 
