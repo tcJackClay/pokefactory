@@ -1,11 +1,2 @@
-res://resources/Item.gd
-res://resources/Pokemon.gd
-res://resources/Team.gd
-res://scripts/GameManager.gd
-res://scripts/Item.gd
-res://scripts/Pokemon.gd
-res://scripts/Team.gd
 res://scripts/MainScene.gd
-res://scripts/ResourceLoader.gd
-res://scripts/ParallaxBackground.gd
-res://scenes/LoadingScene.gd
+res://scripts/FactoryBattleScene.gd

@@ -7,6 +7,7 @@ const POKEMON_SPRITE_DIR := "res://assets/sprites/pokemon/"
 const FACTORY_HISTORY_FILE := "user://battle_factory_history.save"
 const FACTORY_TARGET_TEAM_SIZE := 3
 const FACTORY_TOTAL_PICKS := 3
+const PHONE_WIDTH_THRESHOLD := 520.0
 
 const NAV_COPY := {
 	"pokemon": {
@@ -66,9 +67,9 @@ const FACTORY_OPTION_COPY := [
 @onready var flow_title: Label = $SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/FlowHeader/FlowTitleBox/FlowTitle
 @onready var flow_step: Label = $SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/FlowHeader/FlowTitleBox/FlowStep
 @onready var flow_body: Label = $SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/FlowBody
-@onready var option_bar: HBoxContainer = $SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/OptionBar
+@onready var option_bar: BoxContainer = $SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/OptionBar
 @onready var selection_grid: GridContainer = $SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/SelectionGrid
-@onready var action_row: HBoxContainer = $SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/ActionRow
+@onready var action_row: BoxContainer = $SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/ActionRow
 @onready var continue_button: Button = $SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/ActionRow/ContinueButton
 @onready var reset_button: Button = $SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/ActionRow/ResetButton
 @onready var team_panel: PanelContainer = $SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent/TeamPanel
@@ -80,6 +81,10 @@ const FACTORY_OPTION_COPY := [
 @onready var factory_button: Button = $SafeArea/Root/BottomDock/BottomDockPadding/NavRow/FactoryButtonWrap/FactoryButton
 @onready var train_button: Button = $SafeArea/Root/BottomDock/BottomDockPadding/NavRow/TrainButton
 @onready var settings_button: Button = $SafeArea/Root/BottomDock/BottomDockPadding/NavRow/SettingsButton
+@onready var safe_area: MarginContainer = $SafeArea
+@onready var quick_stats: GridContainer = $SafeArea/Root/Content/HeroCard/HeroPadding/HeroContent/QuickStats
+@onready var nav_row: HBoxContainer = $SafeArea/Root/BottomDock/BottomDockPadding/NavRow
+@onready var factory_button_wrap: CenterContainer = $SafeArea/Root/BottomDock/BottomDockPadding/NavRow/FactoryButtonWrap
 
 var selected_tab := "factory"
 var pokemon_catalog: Array = []
@@ -97,6 +102,8 @@ func _ready() -> void:
 	_apply_mobile_theme()
 	_apply_art()
 	_apply_styles()
+	_apply_responsive_layout()
+	get_viewport().size_changed.connect(_apply_responsive_layout)
 	_load_summary_data()
 	_load_pokemon_catalog()
 	_load_history()
@@ -110,6 +117,27 @@ func _apply_mobile_theme() -> void:
 	var root := get_window()
 	if root:
 		root.min_size = Vector2i(360, 760)
+
+func _apply_responsive_layout() -> void:
+	var viewport_size := get_viewport_rect().size
+	var is_phone := viewport_size.x <= PHONE_WIDTH_THRESHOLD
+
+	safe_area.add_theme_constant_override("margin_left", 12 if is_phone else 20)
+	safe_area.add_theme_constant_override("margin_top", 12 if is_phone else 20)
+	safe_area.add_theme_constant_override("margin_right", 12 if is_phone else 20)
+	safe_area.add_theme_constant_override("margin_bottom", 12 if is_phone else 20)
+
+	quick_stats.columns = 1 if is_phone else 2
+	selection_grid.columns = 2
+	nav_row.add_theme_constant_override("separation", 4 if is_phone else 8)
+	factory_button_wrap.custom_minimum_size = Vector2(78, 78) if is_phone else Vector2(92, 92)
+	factory_button.custom_minimum_size = Vector2(78, 78) if is_phone else Vector2(92, 92)
+
+	var nav_button_height := 56 if is_phone else 62
+	for button in [pokemon_button, dex_button, train_button, settings_button]:
+		button.custom_minimum_size = Vector2(0, nav_button_height)
+		button.add_theme_font_size_override("font_size", 14 if is_phone else 17)
+	factory_button.add_theme_font_size_override("font_size", 17 if is_phone else 20)
 
 func _apply_art() -> void:
 	if ResourceLoader.exists(BACKGROUND_TEXTURE):

@@ -140,7 +140,7 @@ expand_mode = 1
 
 [node name="QuickStats" type="GridContainer" parent="SafeArea/Root/Content/HeroCard/HeroPadding/HeroContent"]
 layout_mode = 2
-columns = 3
+columns = 2
 theme_override_constants/h_separation = 12
 theme_override_constants/v_separation = 12
 
@@ -246,18 +246,17 @@ layout_mode = 2
 text = "点击中心按钮后，会在这里显示对战工厂流程。"
 autowrap_mode = 3
 
-[node name="OptionBar" type="HBoxContainer" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent"]
+[node name="OptionBar" type="VBoxContainer" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent"]
 layout_mode = 2
 theme_override_constants/separation = 10
-alignment = 1
 
 [node name="SelectionGrid" type="GridContainer" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent"]
 layout_mode = 2
-columns = 3
+columns = 2
 theme_override_constants/h_separation = 10
 theme_override_constants/v_separation = 10
 
-[node name="ActionRow" type="HBoxContainer" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent"]
+[node name="ActionRow" type="VBoxContainer" parent="SafeArea/Root/Content/FlowPanel/FlowPadding/FlowContent"]
 layout_mode = 2
 theme_override_constants/separation = 12
 
@@ -337,34 +336,34 @@ theme_override_constants/separation = 8
 alignment = 1
 
 [node name="PokemonButton" type="Button" parent="SafeArea/Root/BottomDock/BottomDockPadding/NavRow"]
-custom_minimum_size = Vector2(0, 72)
+custom_minimum_size = Vector2(0, 62)
 layout_mode = 2
 size_flags_horizontal = 3
 text = "当前宝可梦"
 
 [node name="DexButton" type="Button" parent="SafeArea/Root/BottomDock/BottomDockPadding/NavRow"]
-custom_minimum_size = Vector2(0, 72)
+custom_minimum_size = Vector2(0, 62)
 layout_mode = 2
 size_flags_horizontal = 3
 text = "图鉴"
 
 [node name="FactoryButtonWrap" type="CenterContainer" parent="SafeArea/Root/BottomDock/BottomDockPadding/NavRow"]
-custom_minimum_size = Vector2(108, 108)
+custom_minimum_size = Vector2(92, 92)
 layout_mode = 2
 
 [node name="FactoryButton" type="Button" parent="SafeArea/Root/BottomDock/BottomDockPadding/NavRow/FactoryButtonWrap"]
-custom_minimum_size = Vector2(108, 108)
+custom_minimum_size = Vector2(92, 92)
 layout_mode = 2
 text = "对战\n工厂"
 
 [node name="TrainButton" type="Button" parent="SafeArea/Root/BottomDock/BottomDockPadding/NavRow"]
-custom_minimum_size = Vector2(0, 72)
+custom_minimum_size = Vector2(0, 62)
 layout_mode = 2
 size_flags_horizontal = 3
 text = "训练"
 
 [node name="SettingsButton" type="Button" parent="SafeArea/Root/BottomDock/BottomDockPadding/NavRow"]
-custom_minimum_size = Vector2(0, 72)
+custom_minimum_size = Vector2(0, 62)
 layout_mode = 2
 size_flags_horizontal = 3
 text = "设置"

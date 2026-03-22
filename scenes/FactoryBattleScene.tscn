@@ -1,0 +1,170 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/FactoryBattleScene.gd" id="1"]
+
+[node name="FactoryBattleScene" type="PanelContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("1")
+
+[node name="BattlePadding" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 14
+
+[node name="BattleBody" type="VBoxContainer" parent="BattlePadding"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Header" type="HBoxContainer" parent="BattlePadding/BattleBody"]
+layout_mode = 2
+
+[node name="TopLabel" type="Label" parent="BattlePadding/BattleBody/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "对战工厂 3v3"
+
+[node name="StatusLabel" type="Label" parent="BattlePadding/BattleBody/Header"]
+layout_mode = 2
+text = "准备中..."
+horizontal_alignment = 2
+
+[node name="EnemyPanel" type="PanelContainer" parent="BattlePadding/BattleBody"]
+layout_mode = 2
+
+[node name="EnemyPadding" type="MarginContainer" parent="BattlePadding/BattleBody/EnemyPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="EnemyBody" type="VBoxContainer" parent="BattlePadding/BattleBody/EnemyPanel/EnemyPadding"]
+layout_mode = 2
+
+[node name="EnemyRow" type="HBoxContainer" parent="BattlePadding/BattleBody/EnemyPanel/EnemyPadding/EnemyBody"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="EnemySprite" type="TextureRect" parent="BattlePadding/BattleBody/EnemyPanel/EnemyPadding/EnemyBody/EnemyRow"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="EnemyInfo" type="VBoxContainer" parent="BattlePadding/BattleBody/EnemyPanel/EnemyPadding/EnemyBody/EnemyRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6
+
+[node name="EnemyName" type="Label" parent="BattlePadding/BattleBody/EnemyPanel/EnemyPadding/EnemyBody/EnemyRow/EnemyInfo"]
+layout_mode = 2
+text = "Enemy"
+
+[node name="EnemyHp" type="ProgressBar" parent="BattlePadding/BattleBody/EnemyPanel/EnemyPadding/EnemyBody/EnemyRow/EnemyInfo"]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+show_percentage = false
+
+[node name="PlayerPanel" type="PanelContainer" parent="BattlePadding/BattleBody"]
+layout_mode = 2
+
+[node name="PlayerPadding" type="MarginContainer" parent="BattlePadding/BattleBody/PlayerPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="PlayerBody" type="VBoxContainer" parent="BattlePadding/BattleBody/PlayerPanel/PlayerPadding"]
+layout_mode = 2
+
+[node name="PlayerRow" type="HBoxContainer" parent="BattlePadding/BattleBody/PlayerPanel/PlayerPadding/PlayerBody"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="PlayerSprite" type="TextureRect" parent="BattlePadding/BattleBody/PlayerPanel/PlayerPadding/PlayerBody/PlayerRow"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PlayerInfo" type="VBoxContainer" parent="BattlePadding/BattleBody/PlayerPanel/PlayerPadding/PlayerBody/PlayerRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6
+
+[node name="PlayerName" type="Label" parent="BattlePadding/BattleBody/PlayerPanel/PlayerPadding/PlayerBody/PlayerRow/PlayerInfo"]
+layout_mode = 2
+text = "Player"
+
+[node name="PlayerHp" type="ProgressBar" parent="BattlePadding/BattleBody/PlayerPanel/PlayerPadding/PlayerBody/PlayerRow/PlayerInfo"]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+show_percentage = false
+
+[node name="LogPanel" type="PanelContainer" parent="BattlePadding/BattleBody"]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[node name="LogPadding" type="MarginContainer" parent="BattlePadding/BattleBody/LogPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Log" type="RichTextLabel" parent="BattlePadding/BattleBody/LogPanel/LogPadding"]
+layout_mode = 2
+bbcode_enabled = false
+fit_content = true
+scroll_active = true
+
+[node name="MovePanel" type="PanelContainer" parent="BattlePadding/BattleBody"]
+layout_mode = 2
+
+[node name="MovePadding" type="MarginContainer" parent="BattlePadding/BattleBody/MovePanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Moves" type="GridContainer" parent="BattlePadding/BattleBody/MovePanel/MovePadding"]
+layout_mode = 2
+columns = 2
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
+
+[node name="MoveA" type="Button" parent="BattlePadding/BattleBody/MovePanel/MovePadding/Moves"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "招式1"
+
+[node name="MoveB" type="Button" parent="BattlePadding/BattleBody/MovePanel/MovePadding/Moves"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "招式2"
+
+[node name="MoveC" type="Button" parent="BattlePadding/BattleBody/MovePanel/MovePadding/Moves"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "招式3"
+
+[node name="MoveD" type="Button" parent="BattlePadding/BattleBody/MovePanel/MovePadding/Moves"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "招式4"
+
+[node name="Footer" type="HBoxContainer" parent="BattlePadding/BattleBody"]
+layout_mode = 2
+
+[node name="FooterSpacer" type="Control" parent="BattlePadding/BattleBody/Footer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BackButton" type="Button" parent="BattlePadding/BattleBody/Footer"]
+layout_mode = 2
+text = "返回对手页"

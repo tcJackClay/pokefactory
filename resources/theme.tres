@@ -5,8 +5,3 @@ ScrollContainer/constants/scrollbar_margin_left = 0
 ScrollContainer/constants/scrollbar_margin_right = 0
 ScrollContainer/constants/scrollbar_margin_top = 0
 ScrollContainer/constants/scrollbar_margin_bottom = 0
-
-h_scroll_icon/disable_left = true
-h_scroll_icon/disable_right = true
-v_scroll_icon/disable_left = true
-v_scroll_icon/disable_right = true

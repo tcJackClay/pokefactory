@@ -1,0 +1,92 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/FactoryOpponentScene.gd" id="1"]
+
+[node name="FactoryOpponentScene" type="PanelContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("1")
+
+[node name="BodyPadding" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 14
+
+[node name="Body" type="VBoxContainer" parent="BodyPadding"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Title" type="Label" parent="BodyPadding/Body"]
+layout_mode = 2
+text = "对手生成"
+
+[node name="Info" type="Label" parent="BodyPadding/Body"]
+layout_mode = 2
+text = "生成中..."
+
+[node name="PlayerPanel" type="PanelContainer" parent="BodyPadding/Body"]
+layout_mode = 2
+
+[node name="PlayerPadding" type="MarginContainer" parent="BodyPadding/Body/PlayerPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="PlayerBody" type="VBoxContainer" parent="BodyPadding/Body/PlayerPanel/PlayerPadding"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="PlayerTitle" type="Label" parent="BodyPadding/Body/PlayerPanel/PlayerPadding/PlayerBody"]
+layout_mode = 2
+text = "我方队伍"
+
+[node name="PlayerIcons" type="HBoxContainer" parent="BodyPadding/Body/PlayerPanel/PlayerPadding/PlayerBody"]
+layout_mode = 2
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="EnemyPanel" type="PanelContainer" parent="BodyPadding/Body"]
+layout_mode = 2
+
+[node name="EnemyPadding" type="MarginContainer" parent="BodyPadding/Body/EnemyPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="EnemyBody" type="VBoxContainer" parent="BodyPadding/Body/EnemyPanel/EnemyPadding"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="EnemyTitle" type="Label" parent="BodyPadding/Body/EnemyPanel/EnemyPadding/EnemyBody"]
+layout_mode = 2
+text = "对手队伍"
+
+[node name="EnemyIcons" type="HBoxContainer" parent="BodyPadding/Body/EnemyPanel/EnemyPadding/EnemyBody"]
+layout_mode = 2
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="Actions" type="HBoxContainer" parent="BodyPadding/Body"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="RefreshButton" type="Button" parent="BodyPadding/Body/Actions"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "重新生成"
+
+[node name="BattleButton" type="Button" parent="BodyPadding/Body/Actions"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "开始战斗"
+
+[node name="BackButton" type="Button" parent="BodyPadding/Body/Actions"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "返回组队"

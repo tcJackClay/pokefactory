@@ -1,0 +1,218 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlchjrjqpo3e7"]
+
+[ext_resource type="Script" uid="uid://7dlm4t8b2yq4" path="res://scenes/PokedexScreen.gd" id="1"]
+[ext_resource type="Script" uid="uid://tenii22km0pb" path="res://scenes/PokedexFilter.gd" id="2"]
+
+[node name="PokedexScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -120.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1")
+
+[node name="SearchInput" type="LineEdit" parent="."]
+layout_mode = 1
+offset_left = 70.0
+offset_top = 10.0
+offset_right = 280.0
+offset_bottom = 40.0
+placeholder_text = "Search..."
+
+[node name="FilterPanel" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 50.0
+offset_right = -20.0
+offset_bottom = -80.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2")
+
+[node name="BG" type="ColorRect" parent="FilterPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.1, 0.1, 0.15, 0.8)
+
+[node name="FilterScroll" type="ScrollContainer" parent="FilterPanel"]
+layout_mode = 1
+offset_left = 10.0
+offset_top = 5.0
+offset_right = -10.0
+offset_bottom = -5.0
+
+[node name="FilterVBox" type="VBoxContainer" parent="FilterPanel/FilterScroll"]
+layout_mode = 2
+
+[node name="FilterRow1" type="HBoxContainer" parent="FilterPanel/FilterScroll/FilterVBox"]
+layout_mode = 2
+
+[node name="TypeFilter" type="OptionButton" parent="FilterPanel/FilterScroll/FilterVBox/FilterRow1"]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 2
+selected = 0
+item_count = 19
+popup/item_0/text = "All Types"
+popup/item_0/id = 0
+popup/item_1/text = "Normal"
+popup/item_1/id = 1
+popup/item_2/text = "Fire"
+popup/item_2/id = 2
+popup/item_3/text = "Water"
+popup/item_3/id = 3
+popup/item_4/text = "Electric"
+popup/item_4/id = 4
+popup/item_5/text = "Grass"
+popup/item_5/id = 5
+popup/item_6/text = "Ice"
+popup/item_6/id = 6
+popup/item_7/text = "Fighting"
+popup/item_7/id = 7
+popup/item_8/text = "Poison"
+popup/item_8/id = 8
+popup/item_9/text = "Ground"
+popup/item_9/id = 9
+popup/item_10/text = "Flying"
+popup/item_10/id = 10
+popup/item_11/text = "Psychic"
+popup/item_11/id = 11
+popup/item_12/text = "Bug"
+popup/item_12/id = 12
+popup/item_13/text = "Rock"
+popup/item_13/id = 13
+popup/item_14/text = "Ghost"
+popup/item_14/id = 14
+popup/item_15/text = "Dragon"
+popup/item_15/id = 15
+popup/item_16/text = "Dark"
+popup/item_16/id = 16
+popup/item_17/text = "Steel"
+popup/item_17/id = 17
+popup/item_18/text = "Fairy"
+popup/item_18/id = 18
+
+[node name="Type2Filter" type="OptionButton" parent="FilterPanel/FilterScroll/FilterVBox/FilterRow1"]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 2
+selected = 0
+item_count = 20
+popup/item_0/text = "All"
+popup/item_0/id = 0
+popup/item_1/text = "None (Single)"
+popup/item_1/id = 1
+popup/item_2/text = "Normal"
+popup/item_2/id = 2
+popup/item_3/text = "Fire"
+popup/item_3/id = 3
+popup/item_4/text = "Water"
+popup/item_4/id = 4
+popup/item_5/text = "Electric"
+popup/item_5/id = 5
+popup/item_6/text = "Grass"
+popup/item_6/id = 6
+popup/item_7/text = "Ice"
+popup/item_7/id = 7
+popup/item_8/text = "Fighting"
+popup/item_8/id = 8
+popup/item_9/text = "Poison"
+popup/item_9/id = 9
+popup/item_10/text = "Ground"
+popup/item_10/id = 10
+popup/item_11/text = "Flying"
+popup/item_11/id = 11
+popup/item_12/text = "Psychic"
+popup/item_12/id = 12
+popup/item_13/text = "Bug"
+popup/item_13/id = 13
+popup/item_14/text = "Rock"
+popup/item_14/id = 14
+popup/item_15/text = "Ghost"
+popup/item_15/id = 15
+popup/item_16/text = "Dragon"
+popup/item_16/id = 16
+popup/item_17/text = "Dark"
+popup/item_17/id = 17
+popup/item_18/text = "Steel"
+popup/item_18/id = 18
+popup/item_19/text = "Fairy"
+popup/item_19/id = 19
+
+[node name="DivFilter" type="OptionButton" parent="FilterPanel/FilterScroll/FilterVBox/FilterRow1"]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 2
+selected = 0
+item_count = 6
+popup/item_0/text = "All Div"
+popup/item_0/id = 0
+popup/item_1/text = "S (600+)"
+popup/item_1/id = 1
+popup/item_2/text = "A (500-599)"
+popup/item_2/id = 2
+popup/item_3/text = "B (400-499)"
+popup/item_3/id = 3
+popup/item_4/text = "C (300-399)"
+popup/item_4/id = 4
+popup/item_5/text = "D (<300)"
+popup/item_5/id = 5
+
+[node name="TotalLabel" type="Label" parent="FilterPanel/FilterScroll/FilterVBox/FilterRow1"]
+custom_minimum_size = Vector2(60, 30)
+layout_mode = 2
+text = "0/0"
+
+[node name="FilterRow2" type="HBoxContainer" parent="FilterPanel/FilterScroll/FilterVBox"]
+layout_mode = 2
+
+[node name="AbilityFilter" type="OptionButton" parent="FilterPanel/FilterScroll/FilterVBox/FilterRow2"]
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+selected = 0
+item_count = 1
+popup/item_0/text = "All"
+popup/item_0/id = 0
+
+[node name="ShinyFilter" type="OptionButton" parent="FilterPanel/FilterScroll/FilterVBox/FilterRow2"]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 2
+selected = 0
+item_count = 3
+popup/item_0/text = "All"
+popup/item_0/id = 0
+popup/item_1/text = "Shiny Only"
+popup/item_1/id = 1
+popup/item_2/text = "Normal Only"
+popup/item_2/id = 2
+
+[node name="ClearButton" type="Button" parent="FilterPanel/FilterScroll/FilterVBox/FilterRow2"]
+custom_minimum_size = Vector2(80, 30)
+layout_mode = 2
+text = "Clear"
+
+[node name="ContentScroll" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 130.0
+offset_right = -20.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PokemonGrid" type="GridContainer" parent="ContentScroll"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme_override_constants/h_separation = 4
+theme_override_constants/v_separation = 4
+columns = 4
