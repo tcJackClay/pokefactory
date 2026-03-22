@@ -3,6 +3,8 @@ extends Node
 ## 游戏管理器 - 单例
 ## 管理所有游戏数据和全局状态
 
+const BattleFactoryService = preload("res://scripts/battle_factory/BattleFactoryService.gd")
+
 # 单例
 static var instance: Node
 
@@ -12,6 +14,8 @@ var move_db: MoveDB
 var item_db: ItemDB
 var ability_db: AbilityDB
 var area_db: AreaDB
+var type_chart := TypeEffectiveness.new()
+var battle_factory: BattleFactoryService
 
 # 玩家数据
 var player_name: String = "Player"
@@ -43,23 +47,19 @@ func _init():
 ## 初始化游戏
 func initialize_game():
 	print("Initializing game...")
-	
-	# 初始化数据库
 	pokemon_db = PokemonDB.new()
 	move_db = MoveDB.new()
 	item_db = ItemDB.new()
 	ability_db = AbilityDB.new()
 	area_db = AreaDB.new()
-	
-	# 初始化玩家数据
 	player_team = Team.new()
-	
-	# 初始化背包
-	inventory_items = {}
-	inventory_items["potion"] = 10
-	inventory_items["pokeball"] = 20
-	
+	inventory_items = {"potion": 10, "pokeball": 20}
+	battle_factory = BattleFactoryService.new()
+	battle_factory.setup(self, type_chart)
 	print("Game initialized!")
+
+func get_battle_factory_service() -> BattleFactoryService:
+	return battle_factory
 
 ## 背包管理
 func add_item(item_id: String, count: int = 1):
@@ -82,13 +82,11 @@ func get_item_count(item_id: String) -> int:
 func has_item(item_id: String, count: int = 1) -> bool:
 	return get_item_count(item_id) >= count
 
-## 创建新的宝可梦实例
 func create_pokemon(pokemon_id: String, level: int = 1):
 	var pkmn_data = pokemon_db.get_pokemon(pokemon_id)
 	if pkmn_data.is_empty():
 		printerr("Pokemon not found: " + pokemon_id)
 		return null
-	
 	var instance_class = Pokemon.PokemonInstance.new()
 	instance_class.base_id = pokemon_id
 	instance_class.base = pkmn_data
@@ -96,57 +94,79 @@ func create_pokemon(pokemon_id: String, level: int = 1):
 	instance_class.randomize_ivs()
 	instance_class.calculate_stats()
 	instance_class.setup_moves()
-	
 	return instance_class
 
-## 获取宝可梦数据
+func hydrate_pokemon(data: Dictionary):
+	var pkmn = create_pokemon(data.get("id", ""), data.get("level", 1))
+	if pkmn == null:
+		return null
+	pkmn.shiny = data.get("shiny", false)
+	pkmn.caught = data.get("caught", 1)
+	var ivs = data.get("ivs", {})
+	pkmn.iv_hp = ivs.get("hp", pkmn.iv_hp)
+	pkmn.iv_atk = ivs.get("atk", pkmn.iv_atk)
+	pkmn.iv_def = ivs.get("def", pkmn.iv_def)
+	pkmn.iv_satk = ivs.get("satk", pkmn.iv_satk)
+	pkmn.iv_sdef = ivs.get("sdef", pkmn.iv_sdef)
+	pkmn.iv_spe = ivs.get("spe", pkmn.iv_spe)
+	var evs = data.get("evs", {})
+	pkmn.ev_hp = evs.get("hp", 0)
+	pkmn.ev_atk = evs.get("atk", 0)
+	pkmn.ev_def = evs.get("def", 0)
+	pkmn.ev_satk = evs.get("satk", 0)
+	pkmn.ev_sdef = evs.get("sdef", 0)
+	pkmn.ev_spe = evs.get("spe", 0)
+	pkmn.ability = data.get("ability", pkmn.ability)
+	pkmn.item = data.get("item", "")
+	pkmn.status = data.get("status", "")
+	pkmn.calculate_stats()
+	pkmn.current_hp = clamp(data.get("current_hp", pkmn.max_hp), 0, pkmn.max_hp)
+	return pkmn
+
 func get_pokemon_data(pokemon_id: String) -> Dictionary:
 	return pokemon_db.get_pokemon(pokemon_id)
 
-## 获取技能数据
 func get_move_data(move_id: String) -> Dictionary:
 	return move_db.get_move(move_id)
 
-## 获取道具数据
 func get_item_data(item_id: String) -> Dictionary:
 	return item_db.get_item(item_id)
 
-## 获取特性数据
 func get_ability_data(ability_id: String) -> Dictionary:
 	return ability_db.get_ability(ability_id)
 
-## 获取区域数据
 func get_area_data(area_id: String) -> Dictionary:
 	return area_db.get_area(area_id)
 
-## 添加宝可梦到队伍
 func add_pokemon_to_team(pokemon_id: String, level: int = 1) -> bool:
 	var pkmn = create_pokemon(pokemon_id, level)
 	if pkmn:
 		return player_team.add_pokemon(pkmn)
 	return false
 
-## 使用道具
+func clear_player_team() -> void:
+	player_team = Team.new()
+
+func get_team_members() -> Array:
+	var result: Array = []
+	for slot in player_team.slots:
+		if slot and slot.pokemon:
+			result.append(slot.pokemon)
+	return result
+
 func use_item(item_id: String, target) -> Dictionary:
 	if not has_item(item_id):
-		return{"success": false, "message": "Not enough items"}
-	
-	# 简单道具效果
+		return {"success": false, "message": "Not enough items"}
 	var item_data = get_item_data(item_id)
 	if item_data.is_empty():
-		return{"success": false, "message": "Unknown item"}
-	
+		return {"success": false, "message": "Unknown item"}
 	var result = {"success": true, "message": ""}
-	
-	# HP回复
 	if item_data.get("hp_restore", 0) > 0 and target and target.has_method("heal"):
 		target.heal(item_data.hp_restore)
 		result.message = "Recovered %d HP!" % item_data.hp_restore
-	
 	remove_item(item_id)
 	return result
 
-## 保存游戏
 func save_game() -> Dictionary:
 	var save_data = {
 		"version": game_version,
@@ -155,58 +175,53 @@ func save_game() -> Dictionary:
 		"current_area": current_area,
 		"team": player_team.to_dict(),
 		"inventory": inventory_items,
-		"settings": settings
+		"settings": settings,
+		"battle_factory": battle_factory.get_state()
 	}
-	
 	var file = FileAccess.open("user://pokechill_save.json", FileAccess.WRITE)
 	if file:
 		file.store_string(JSON.stringify(save_data))
 		file.close()
 		print("Game saved!")
 		return {"success": true}
-	
 	return {"success": false, "message": "Failed to save"}
 
-## 加载游戏
 func load_game() -> bool:
 	if not FileAccess.file_exists("user://pokechill_save.json"):
 		return false
-	
 	var file = FileAccess.open("user://pokechill_save.json", FileAccess.READ)
 	if not file:
 		return false
-	
 	var json = JSON.new()
 	var error = json.parse(file.get_as_text())
 	file.close()
-	
 	if error != OK:
 		return false
-	
 	var save_data = json.get_data()
-	
 	player_name = save_data.get("player_name", "Player")
 	current_area = save_data.get("current_area", "")
 	settings = save_data.get("settings", settings)
 	inventory_items = save_data.get("inventory", {})
-	
+	battle_factory.set_state(save_data.get("battle_factory", battle_factory.create_default_state()))
+	clear_player_team()
 	if save_data.has("team"):
 		var team_data = save_data["team"]
 		player_team.name = team_data.get("name", "Team 1")
-	
+		var slots_data = team_data.get("slots", [])
+		for i in range(min(slots_data.size(), player_team.slots.size())):
+			var slot_data = slots_data[i]
+			if slot_data and slot_data.get("pokemon"):
+				player_team.slots[i].pokemon = hydrate_pokemon(slot_data.get("pokemon", {}))
 	print("Game loaded!")
 	return true
 
-## 重置存档
-func reset_save():
+func reset_save() -> void:
 	if FileAccess.file_exists("user://pokechill_save.json"):
 		var dir = DirAccess.open("user://")
 		if dir:
 			dir.remove("pokechill_save.json")
 	initialize_game()
 
-
-# 静态方法访问
 static func get_instance() -> Node:
 	return instance
 
