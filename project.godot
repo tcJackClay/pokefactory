@@ -1,7 +1,7 @@
 [application]
 
-config/name="PokeChill"
-run/main_scene="res://scenes/MainScene.tscn"
+config/name="PokeFactory Mobile"
+run/main_scene="res://app/scenes/App.tscn"
 config_features=PackedStringArray("4.2")
 config/icon="res://icon.svg"
 

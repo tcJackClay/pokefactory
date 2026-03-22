@@ -1,0 +1,185 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://app/scripts/App.gd" id="1"]
+
+[node name="App" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="SafeArea" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = -24.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Root" type="VBoxContainer" parent="SafeArea"]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="HeaderCard" type="PanelContainer" parent="SafeArea/Root"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HeaderPadding" type="MarginContainer" parent="SafeArea/Root/HeaderCard"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HeaderContent" type="VBoxContainer" parent="SafeArea/Root/HeaderCard/HeaderPadding"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Eyebrow" type="Label" parent="SafeArea/Root/HeaderCard/HeaderPadding/HeaderContent"]
+layout_mode = 2
+text = "Mobile-first framework"
+
+[node name="Title" type="Label" parent="SafeArea/Root/HeaderCard/HeaderPadding/HeaderContent"]
+layout_mode = 2
+text = "PokeFactory Mobile"
+
+[node name="Description" type="Label" parent="SafeArea/Root/HeaderCard/HeaderPadding/HeaderContent"]
+layout_mode = 2
+text = "保留现有图片和文本素材，先搭建一个适合手机纵向屏幕的 Godot 项目框架，方便后续继续迭代。"
+autowrap_mode = 3
+
+[node name="HeroRow" type="HBoxContainer" parent="SafeArea/Root/HeaderCard/HeaderPadding/HeaderContent"]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="TrainerTexture" type="TextureRect" parent="SafeArea/Root/HeaderCard/HeaderPadding/HeaderContent/HeroRow"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+stretch_mode = 5
+expand_mode = 1
+
+[node name="HeroSummary" type="VBoxContainer" parent="SafeArea/Root/HeaderCard/HeaderPadding/HeaderContent/HeroRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="HeroName" type="Label" parent="SafeArea/Root/HeaderCard/HeaderPadding/HeaderContent/HeroRow/HeroSummary"]
+layout_mode = 2
+text = "素材预览"
+
+[node name="HeroBody" type="Label" parent="SafeArea/Root/HeaderCard/HeaderPadding/HeaderContent/HeroRow/HeroSummary"]
+layout_mode = 2
+text = "这里会优先展示原项目图片素材，并在首页提示当前数据资源规模。"
+autowrap_mode = 3
+
+[node name="StatsGrid" type="GridContainer" parent="SafeArea/Root"]
+layout_mode = 2
+columns = 2
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 16
+
+[node name="PokemonStat" type="PanelContainer" parent="SafeArea/Root/StatsGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PokemonStatPadding" type="MarginContainer" parent="SafeArea/Root/StatsGrid/PokemonStat"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="PokemonStatBody" type="VBoxContainer" parent="SafeArea/Root/StatsGrid/PokemonStat/PokemonStatPadding"]
+layout_mode = 2
+
+[node name="PokemonStatLabel" type="Label" parent="SafeArea/Root/StatsGrid/PokemonStat/PokemonStatPadding/PokemonStatBody"]
+layout_mode = 2
+text = "Pokémon 数据"
+
+[node name="PokemonStatValue" type="Label" parent="SafeArea/Root/StatsGrid/PokemonStat/PokemonStatPadding/PokemonStatBody"]
+layout_mode = 2
+text = "0"
+
+[node name="ItemStat" type="PanelContainer" parent="SafeArea/Root/StatsGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ItemStatPadding" type="MarginContainer" parent="SafeArea/Root/StatsGrid/ItemStat"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="ItemStatBody" type="VBoxContainer" parent="SafeArea/Root/StatsGrid/ItemStat/ItemStatPadding"]
+layout_mode = 2
+
+[node name="ItemStatLabel" type="Label" parent="SafeArea/Root/StatsGrid/ItemStat/ItemStatPadding/ItemStatBody"]
+layout_mode = 2
+text = "道具数据"
+
+[node name="ItemStatValue" type="Label" parent="SafeArea/Root/StatsGrid/ItemStat/ItemStatPadding/ItemStatBody"]
+layout_mode = 2
+text = "0"
+
+[node name="MainPanel" type="PanelContainer" parent="SafeArea/Root"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MainPadding" type="MarginContainer" parent="SafeArea/Root/MainPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 18
+
+[node name="MainContent" type="VBoxContainer" parent="SafeArea/Root/MainPanel/MainPadding"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 14
+
+[node name="SectionTitle" type="Label" parent="SafeArea/Root/MainPanel/MainPadding/MainContent"]
+layout_mode = 2
+text = "框架分区"
+
+[node name="SectionDescription" type="Label" parent="SafeArea/Root/MainPanel/MainPadding/MainContent"]
+layout_mode = 2
+text = "先把常用入口、数据检查和后续待接入模块的位置预留出来。"
+autowrap_mode = 3
+
+[node name="ScreenTitle" type="Label" parent="SafeArea/Root/MainPanel/MainPadding/MainContent"]
+layout_mode = 2
+text = "首页"
+
+[node name="ScreenBody" type="Label" parent="SafeArea/Root/MainPanel/MainPadding/MainContent"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "当前显示首页概览。后续可以在这里接入主玩法、任务流或运营活动入口。"
+autowrap_mode = 3
+
+[node name="FeatureList" type="VBoxContainer" parent="SafeArea/Root/MainPanel/MainPadding/MainContent"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="BottomNav" type="PanelContainer" parent="SafeArea/Root"]
+layout_mode = 2
+
+[node name="BottomNavPadding" type="MarginContainer" parent="SafeArea/Root/BottomNav"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="NavButtons" type="HBoxContainer" parent="SafeArea/Root/BottomNav/BottomNavPadding"]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
